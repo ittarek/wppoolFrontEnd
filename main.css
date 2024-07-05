@@ -1,15 +1,43 @@
-*{
+* {
     margin: 0;
     padding: 0;
+ 
     box-sizing: border-box;
 }
 
-/* .image_side{
-    background: url("/image/bannerImage.png");
-    background-color: #2042B6;
-    /* background-blend-mode: darken; */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 
-} */
+/* Banner */
+
+
+.text_side h1 {
+
+    font-family: Nantes;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 50.72px;
+    /* text-align: left; */
+    display: block;
+    margin-bottom: -12px;
+
+}
+
+.text_side span {
+    font-family: Neue Haas Unica W1G;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24.1px;
+    text-align: left;
+    color: #CDCDCD;
+ 
+}
+
+/* all companies */
+.com_input input::placeholder {
+    color: #191618;
+    text-align: left;
+    /* margin-right: -100px; */
+}
+.table_btn button{
+    font-family: Messina Sens;
+    box-shadow: 0px 24px 36px 0px #00000040;
+}

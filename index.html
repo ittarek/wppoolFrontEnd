@@ -44,7 +44,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="bg-[#E9E9E9]">
       <!-- banner -->
       <section
         class="banner pb-11 px-9 -mt-[107px] bg-[#2042B6] h-screen flex justify-between items-end gap-6"
@@ -125,8 +125,8 @@
         </div>
       </section>
       <!-- all companies -->
-      <section class="companies my-11 px-9">
-        <div class="companies_nav flex justify-between">
+      <section class="companies  my-11 px-9">
+        <div class="table_shadow bg-[#FAFAFA]  rounded-[20px] p-6 mb-6"><div class="companies_nav flex justify-between">
           <h1 class="font-[400] text-[48px]" style="font-family: Nantes">
             All Companies
           </h1>
@@ -144,9 +144,9 @@
           </div>
         </div>
         <!-- table -->
-        <div class="my-11">
-          <table class="min-w-full">
-            <thead>
+        <div class="my-11 overflow-x-auto sm:overflow-hidden">
+          <table class="min-w-full table-auto">
+            <thead class="sticky">
               <tr class="text-left">
                 <th class="py-2  ">Company</th>
                 <th class="py-2 font-normal  px-3">Ticker</th>
@@ -274,13 +274,32 @@
               <!-- Add more rows as needed -->
             </tbody>
           </table>
-        </div>
+        </div></div>
 
         <div class="table_btn w-[500px] mx-auto space-x-3">
           <button class=" bg-[#2042B6] p-3 rounded-[124px] text-white text-[400] p-[18px]">Download ‘All Companies’ Data</button>
           <button class=" bg-[#2042B6] p-3 rounded-[124px] text-white text-[400] p-[18px]">View Methodology</button>
         </div>
       </section>
+      <!-- sponsor -->
+       <section class="px-9 my-11 ">
+        <div class="text-left mb-11">
+          <h1>Potential Future Listings</h1>
+          <p>Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+        </div>
+       <div class="sponsore_name w-full grid grid-cols-5 mx-auto gap-3 ">
+          <div><img src="" alt=""></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+       </section>
     </main>
     <footer></footer>
   </body>

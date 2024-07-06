@@ -183,7 +183,8 @@
     line-height: 24px;
     text-align: left;
 }
-.storyTailer img{
+
+.storyTailer img {
     width: 120px;
     height: 120px;
     border-radius: 4px;
@@ -191,30 +192,66 @@
     margin-top: -50px;
     margin-left: 20px;
 }
-.storyTailer .card_content{
-   padding: 15px 0 25px 20px;
-   
+
+.storyTailer .card_content {
+    padding: 15px 0 25px 20px;
+
 }
+
 .storyTailer .card_content h3 {
-font-family: Messina Sans;
+    font-family: Messina Sans;
     font-size: 14px;
     font-weight: 400;
     line-height: 19.6px;
     text-align: left;
-color: #2042B6;
+    color: #2042B6;
 }
+
 .storyTailer .card_content p {
     width: 300px;
-font-family: Nantes;
+    font-family: Nantes;
     font-size: 16px;
     font-weight: 400;
     line-height: 22.4px;
     text-align: left;
-   
+
 }
-.storyTailer .card_content button{
-   padding: 6px 10px;
+
+.storyTailer .card_content button {
+    padding: 6px 10px;
     border-radius: 124px;
 
-   
+
+}
+
+/* about */
+.about h1 {
+    font-family: Nantes;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 67.63px;
+    text-align: left;
+    color: #191618;
+}
+
+.about h2 {
+    font-family: Nantes;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 42.27px;
+    text-align: left;
+    color: #7D7F81;
+}
+
+.about p {
+    font-family: Messina Sans;
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 24px;
+    text-align: left;
+    color: #191618;
+}
+
+.about button {
+    box-shadow: 0px 24px 36px 0px #00000040;
 }

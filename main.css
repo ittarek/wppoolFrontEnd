@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
- 
+
     box-sizing: border-box;
 }
 
@@ -28,7 +28,7 @@
     line-height: 24.1px;
     text-align: left;
     color: #CDCDCD;
- 
+
 }
 
 /* all companies */
@@ -37,17 +37,184 @@
     text-align: left;
     /* margin-right: -100px; */
 }
-.table_shadow{
+
+.table_shadow {
     box-shadow: 0px 66px 66px 0px #0000000A;
 }
-.table_btn button{
+
+.table_btn button {
     font-family: Messina Sens;
     box-shadow: 0px 24px 36px 0px #00000040;
 }
+
 /* sponsore */
-.sponsore_name div{
+.sponsor_name div {
     background: white;
-    width: 150px;
-    height: 150px;
+    width: 220px;
+    height: 120px;
     margin: auto;
+    border-radius: 6px;
+}
+
+.sponsor h1 {
+
+    font-family: Nantes;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 57.6px;
+    text-align: left;
+}
+
+.sponsor p {
+    width: 880px;
+    font-family: Messina Sans;
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 25.6px;
+    text-align: left;
+}
+
+.sponsor_name div img {
+    width: 132px;
+    height: 50px;
+
+    margin: 36px;
+}
+
+/* slider  */
+.slider_section {
+    background-image: url(/image//slider/sliderBg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.slider_heading h1 {
+    font-family: Nantes;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 67.63px;
+    text-align: left;
+}
+
+.slider_heading button {
+    width: 200px;
+    height: 58px;
+    border-radius: 124px;
+    font-family: Nantes;
+    font-size: 42px;
+    font-weight: 400;
+    text-align: left;
+    color: white;
+    background-color: #2042B6;
+    ;
+}
+
+.slider_heading p {
+    font-family: Messina Sans;
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 25.6px;
+    text-align: left;
+    color: #191618;
+}
+
+.swiper_wrapper {
+
+    /* max-width: 800px; */
+    /* border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: auto; */
+
+
+}
+
+.slider {
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.slide {
+    flex: 0 0 auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 580px;
+    height: auto;
+    border-radius: 6px;
+    object-fit: cover;
+    box-shadow: 0px 36px 36px 0px #0000001F;
+}
+
+.nav-container button {
+    box-shadow: 0px 24px 36px 0px #00000040;
+}
+
+.slide_nav {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.pagination span {
+    font-weight: bold;
+}
+
+/* stories */
+.stories h1 {
+    font-family: Nantes;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 57.6px;
+    text-align: left;
+}
+
+.stories p {
+    font-family: Messina Sans;
+    font-size: 20px;
+    font-weight: 350;
+    line-height: 24px;
+    text-align: left;
+}
+.storyTailer img{
+    width: 120px;
+    height: 120px;
+    border-radius: 4px;
+    position: relative;
+    margin-top: -50px;
+    margin-left: 20px;
+}
+.storyTailer .card_content{
+   padding: 15px 0 25px 20px;
+   
+}
+.storyTailer .card_content h3 {
+font-family: Messina Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.6px;
+    text-align: left;
+color: #2042B6;
+}
+.storyTailer .card_content p {
+    width: 300px;
+font-family: Nantes;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+   
+}
+.storyTailer .card_content button{
+   padding: 6px 10px;
+    border-radius: 124px;
+
+   
 }

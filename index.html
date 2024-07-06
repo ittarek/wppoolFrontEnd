@@ -44,7 +44,7 @@
         </div>
       </nav>
     </header>
-    <main class="bg-[#E9E9E9]">
+    <main class="bg-[#EDEDED]">
       <!-- banner -->
       <section
         class="banner pb-11 px-9 -mt-[107px] bg-[#2042B6] h-screen flex justify-between items-end gap-6"
@@ -60,11 +60,6 @@
           <span>LTM avg revenue growth rate</span>
         </div>
         <div class="image_side my-auto">
-          <!-- <img
-            class="absolute top-[20%] left-[32%]"
-            src="/image/Asset.svg"
-            alt="bannerMainImg"
-          /> -->
           <svg
             class="absolute top-[10%] left-[32%]"
             width="549"
@@ -125,182 +120,346 @@
         </div>
       </section>
       <!-- all companies -->
-      <section class="companies  my-11 px-9">
-        <div class="table_shadow bg-[#FAFAFA]  rounded-[20px] p-6 mb-6"><div class="companies_nav flex justify-between">
-          <h1 class="font-[400] text-[48px]" style="font-family: Nantes">
-            All Companies
-          </h1>
-          <div
-            class="com_input flex items-center border-[1px] rounded-[8px] border-[#DADADA] xl:w-[588px] xl:h-[58px] bg-gray-100"
-          >
-            <button id="button-addon2" type="submit" class="">
-              <i class="fa fa-search px-3"></i>
-            </button>
-            <input
-              type="search"
-              placeholder="Search Companies"
-              class="bg-gray-100"
-            />
+      <section class="companies my-11 px-9">
+        <div class="table_shadow bg-[#FAFAFA] rounded-[20px] p-6 mb-6">
+          <div class="companies_nav flex justify-between">
+            <h1 class="font-[400] text-[48px]" style="font-family: Nantes">
+              All Companies
+            </h1>
+            <div
+              class="com_input flex items-center border-[1px] rounded-[8px] border-[#DADADA] xl:w-[588px] xl:h-[58px] bg-gray-100"
+            >
+              <button id="button-addon2" type="submit" class="">
+                <i class="fa fa-search px-3"></i>
+              </button>
+              <input
+                type="search"
+                placeholder="Search Companies"
+                class="bg-gray-100"
+              />
+            </div>
+          </div>
+          <!-- table -->
+          <div class="my-11 overflow-x-auto sm:overflow-hidden">
+            <table class="min-w-full table-auto">
+              <thead class="sticky">
+                <tr class="text-left">
+                  <th class="py-2">Company</th>
+                  <th class="py-2 font-normal px-3">Ticker</th>
+                  <th class="py-2 font-normal">Vertical</th>
+                  <th class="py-2 font-normal">Price</th>
+                  <th class="py-2 font-normal text-center">Market Cap($B)</th>
+                  <th class="py-2 font-normal text-center">Revenue Growth</th>
+                  <th class="py-2 font-normal text-center">Gross Margin</th>
+                  <th class="py-2 font-normal text-center">EV/Revenue</th>
+                  <th class="py-2 font-normal text-center">YTD Performance</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="odd:bg-gray-100">
+                  <td class="py-2 pr-11">Adyes</td>
+                  <td class="py-2 px-3">AFRM</td>
+                  <td class="py-2 pr-11">Payments</td>
+                  <td class="py-2">$17.15</td>
+                  <td class="py-2 text-center">$50.5</td>
+                  <td class="py-2 text-center">49.0%</td>
+                  <td class="py-2 text-center">15.8%</td>
+                  <td class="py-2 text-center">6.3</td>
+                  <td class="py-2 text-center">24.3%</td>
+                </tr>
+                <tr class="odd:bg-gray-100">
+                  <td class="py-2 pr-11">Adyes</td>
+                  <td class="py-2 px-3">AFRM</td>
+                  <td class="py-2 pr-11">Payments</td>
+                  <td class="py-2">$17.15</td>
+                  <td class="py-2 text-center">$50.5</td>
+                  <td class="py-2 text-center">49.0%</td>
+                  <td class="py-2 text-center">15.8%</td>
+                  <td class="py-2 text-center">6.3</td>
+                  <td class="py-2 text-center">24.3%</td>
+                </tr>
+                <tr class="odd:bg-gray-100">
+                  <td class="py-2 pr-11">Adyes</td>
+                  <td class="py-2 px-3">AFRM</td>
+                  <td class="py-2 pr-11">Payments</td>
+                  <td class="py-2">$17.15</td>
+                  <td class="py-2 text-center">$50.5</td>
+                  <td class="py-2 text-center">49.0%</td>
+                  <td class="py-2 text-center">15.8%</td>
+                  <td class="py-2 text-center">6.3</td>
+                  <td class="py-2 text-center">24.3%</td>
+                </tr>
+                <tr class="odd:bg-gray-100">
+                  <td class="py-2 pr-11">Adyes</td>
+                  <td class="py-2 px-3">AFRM</td>
+                  <td class="py-2 pr-11">Payments</td>
+                  <td class="py-2">$17.15</td>
+                  <td class="py-2 text-center">$50.5</td>
+                  <td class="py-2 text-center">49.0%</td>
+                  <td class="py-2 text-center">15.8%</td>
+                  <td class="py-2 text-center">6.3</td>
+                  <td class="py-2 text-center">24.3%</td>
+                </tr>
+                <tr class="odd:bg-gray-100">
+                  <td class="py-2 pr-11">Adyes</td>
+                  <td class="py-2 px-3">AFRM</td>
+                  <td class="py-2 pr-11">Payments</td>
+                  <td class="py-2">$17.15</td>
+                  <td class="py-2 text-center">$50.5</td>
+                  <td class="py-2 text-center">49.0%</td>
+                  <td class="py-2 text-center">15.8%</td>
+                  <td class="py-2 text-center">6.3</td>
+                  <td class="py-2 text-center">24.3%</td>
+                </tr>
+                <tr class="odd:bg-gray-100">
+                  <td class="py-2 pr-11">Adyes</td>
+                  <td class="py-2 px-3">AFRM</td>
+                  <td class="py-2 pr-11">Payments</td>
+                  <td class="py-2">$17.15</td>
+                  <td class="py-2 text-center">$50.5</td>
+                  <td class="py-2 text-center">49.0%</td>
+                  <td class="py-2 text-center">15.8%</td>
+                  <td class="py-2 text-center">6.3</td>
+                  <td class="py-2 text-center">24.3%</td>
+                </tr>
+                <tr class="odd:bg-gray-100">
+                  <td class="py-2 pr-11">Adyes</td>
+                  <td class="py-2 px-3">AFRM</td>
+                  <td class="py-2 pr-11">Payments</td>
+                  <td class="py-2">$17.15</td>
+                  <td class="py-2 text-center">$50.5</td>
+                  <td class="py-2 text-center">49.0%</td>
+                  <td class="py-2 text-center">15.8%</td>
+                  <td class="py-2 text-center">6.3</td>
+                  <td class="py-2 text-center">24.3%</td>
+                </tr>
+                <tr class="odd:bg-gray-100">
+                  <td class="py-2 pr-11">Adyes</td>
+                  <td class="py-2 px-3">AFRM</td>
+                  <td class="py-2 pr-11">Payments</td>
+                  <td class="py-2">$17.15</td>
+                  <td class="py-2 text-center">$50.5</td>
+                  <td class="py-2 text-center">49.0%</td>
+                  <td class="py-2 text-center">15.8%</td>
+                  <td class="py-2 text-center">6.3</td>
+                  <td class="py-2 text-center">24.3%</td>
+                </tr>
+                <tr class="odd:bg-gray-100">
+                  <td class="py-2 pr-11">Adyes</td>
+                  <td class="py-2 px-3">AFRM</td>
+                  <td class="py-2 pr-11">Payments</td>
+                  <td class="py-2">$17.15</td>
+                  <td class="py-2 text-center">$50.5</td>
+                  <td class="py-2 text-center">49.0%</td>
+                  <td class="py-2 text-center">15.8%</td>
+                  <td class="py-2 text-center">6.3</td>
+                  <td class="py-2 text-center">24.3%</td>
+                </tr>
+                <tr class="odd:bg-gray-100">
+                  <td class="py-2 pr-11">Adyes</td>
+                  <td class="py-2 px-3">AFRM</td>
+                  <td class="py-2 pr-11">Payments</td>
+                  <td class="py-2">$17.15</td>
+                  <td class="py-2 text-center">$50.5</td>
+                  <td class="py-2 text-center">49.0%</td>
+                  <td class="py-2 text-center">15.8%</td>
+                  <td class="py-2 text-center">6.3</td>
+                  <td class="py-2 text-center">24.3%</td>
+                </tr>
+
+                <!-- Add more rows as needed -->
+              </tbody>
+            </table>
           </div>
         </div>
-        <!-- table -->
-        <div class="my-11 overflow-x-auto sm:overflow-hidden">
-          <table class="min-w-full table-auto">
-            <thead class="sticky">
-              <tr class="text-left">
-                <th class="py-2  ">Company</th>
-                <th class="py-2 font-normal  px-3">Ticker</th>
-                <th class="py-2 font-normal ">Vertical</th>
-                <th class="py-2 font-normal ">Price</th>
-                <th class="py-2 font-normal  text-center">Market Cap($B)</th>
-                <th class="py-2 font-normal  text-center">Revenue Growth</th>
-                <th class="py-2 font-normal  text-center">Gross Margin</th>
-                <th class="py-2 font-normal  text-center">EV/Revenue</th>
-                <th class="py-2 font-normal  text-center">YTD Performance</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="odd:bg-gray-100">
-                <td class="py-2 pr-11">Adyes</td>
-                <td class="py-2 px-3">AFRM</td>
-                <td class="py-2 pr-11">Payments</td>
-                <td class="py-2">$17.15</td>
-                <td class="py-2 text-center">$50.5</td>
-                <td class="py-2 text-center">49.0%</td>
-                <td class="py-2 text-center">15.8%</td>
-                <td class="py-2 text-center">6.3</td>
-                <td class="py-2 text-center">24.3%</td>
-              </tr>
-              <tr class="odd:bg-gray-100">
-                <td class="py-2 pr-11">Adyes</td>
-                <td class="py-2 px-3">AFRM</td>
-                <td class="py-2 pr-11">Payments</td>
-                <td class="py-2">$17.15</td>
-                <td class="py-2 text-center">$50.5</td>
-                <td class="py-2 text-center">49.0%</td>
-                <td class="py-2 text-center">15.8%</td>
-                <td class="py-2 text-center">6.3</td>
-                <td class="py-2 text-center">24.3%</td>
-              </tr>
-              <tr class="odd:bg-gray-100">
-                <td class="py-2 pr-11">Adyes</td>
-                <td class="py-2 px-3">AFRM</td>
-                <td class="py-2 pr-11">Payments</td>
-                <td class="py-2">$17.15</td>
-                <td class="py-2 text-center">$50.5</td>
-                <td class="py-2 text-center">49.0%</td>
-                <td class="py-2 text-center">15.8%</td>
-                <td class="py-2 text-center">6.3</td>
-                <td class="py-2 text-center">24.3%</td>
-              </tr>
-              <tr class="odd:bg-gray-100">
-                <td class="py-2 pr-11">Adyes</td>
-                <td class="py-2 px-3">AFRM</td>
-                <td class="py-2 pr-11">Payments</td>
-                <td class="py-2">$17.15</td>
-                <td class="py-2 text-center">$50.5</td>
-                <td class="py-2 text-center">49.0%</td>
-                <td class="py-2 text-center">15.8%</td>
-                <td class="py-2 text-center">6.3</td>
-                <td class="py-2 text-center">24.3%</td>
-              </tr>
-              <tr class="odd:bg-gray-100">
-                <td class="py-2 pr-11">Adyes</td>
-                <td class="py-2 px-3">AFRM</td>
-                <td class="py-2 pr-11">Payments</td>
-                <td class="py-2">$17.15</td>
-                <td class="py-2 text-center">$50.5</td>
-                <td class="py-2 text-center">49.0%</td>
-                <td class="py-2 text-center">15.8%</td>
-                <td class="py-2 text-center">6.3</td>
-                <td class="py-2 text-center">24.3%</td>
-              </tr>
-              <tr class="odd:bg-gray-100">
-                <td class="py-2 pr-11">Adyes</td>
-                <td class="py-2 px-3">AFRM</td>
-                <td class="py-2 pr-11">Payments</td>
-                <td class="py-2">$17.15</td>
-                <td class="py-2 text-center">$50.5</td>
-                <td class="py-2 text-center">49.0%</td>
-                <td class="py-2 text-center">15.8%</td>
-                <td class="py-2 text-center">6.3</td>
-                <td class="py-2 text-center">24.3%</td>
-              </tr>
-              <tr class="odd:bg-gray-100">
-                <td class="py-2 pr-11">Adyes</td>
-                <td class="py-2 px-3">AFRM</td>
-                <td class="py-2 pr-11">Payments</td>
-                <td class="py-2">$17.15</td>
-                <td class="py-2 text-center">$50.5</td>
-                <td class="py-2 text-center">49.0%</td>
-                <td class="py-2 text-center">15.8%</td>
-                <td class="py-2 text-center">6.3</td>
-                <td class="py-2 text-center">24.3%</td>
-              </tr>
-              <tr class="odd:bg-gray-100">
-                <td class="py-2 pr-11">Adyes</td>
-                <td class="py-2 px-3">AFRM</td>
-                <td class="py-2 pr-11">Payments</td>
-                <td class="py-2">$17.15</td>
-                <td class="py-2 text-center">$50.5</td>
-                <td class="py-2 text-center">49.0%</td>
-                <td class="py-2 text-center">15.8%</td>
-                <td class="py-2 text-center">6.3</td>
-                <td class="py-2 text-center">24.3%</td>
-              </tr>
-              <tr class="odd:bg-gray-100">
-                <td class="py-2 pr-11">Adyes</td>
-                <td class="py-2 px-3">AFRM</td>
-                <td class="py-2 pr-11">Payments</td>
-                <td class="py-2">$17.15</td>
-                <td class="py-2 text-center">$50.5</td>
-                <td class="py-2 text-center">49.0%</td>
-                <td class="py-2 text-center">15.8%</td>
-                <td class="py-2 text-center">6.3</td>
-                <td class="py-2 text-center">24.3%</td>
-              </tr>
-              <tr class="odd:bg-gray-100">
-                <td class="py-2 pr-11">Adyes</td>
-                <td class="py-2 px-3">AFRM</td>
-                <td class="py-2 pr-11">Payments</td>
-                <td class="py-2">$17.15</td>
-                <td class="py-2 text-center">$50.5</td>
-                <td class="py-2 text-center">49.0%</td>
-                <td class="py-2 text-center">15.8%</td>
-                <td class="py-2 text-center">6.3</td>
-                <td class="py-2 text-center">24.3%</td>
-              </tr>
-
-              <!-- Add more rows as needed -->
-            </tbody>
-          </table>
-        </div></div>
 
         <div class="table_btn w-[500px] mx-auto space-x-3">
-          <button class=" bg-[#2042B6] p-3 rounded-[124px] text-white text-[400] p-[18px]">Download ‘All Companies’ Data</button>
-          <button class=" bg-[#2042B6] p-3 rounded-[124px] text-white text-[400] p-[18px]">View Methodology</button>
+          <button
+            class="bg-[#2042B6] p-3 rounded-[124px] text-white text-[400] p-[18px]"
+          >
+            Download ‘All Companies’ Data
+          </button>
+          <button
+            class="bg-[#2042B6] p-3 rounded-[124px] text-white text-[400] p-[18px]"
+          >
+            View Methodology
+          </button>
         </div>
       </section>
       <!-- sponsor -->
-       <section class="px-9 my-11 ">
-        <div class="text-left mb-11">
+      <section class="sponsor px-9 my-11">
+        <div class="ml-[10px] mb-11">
           <h1>Potential Future Listings</h1>
-          <p>Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+          <p>
+            Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+          </p>
         </div>
-       <div class="sponsore_name w-full grid grid-cols-5 mx-auto gap-3 ">
-          <div><img src="" alt=""></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="sponsor_name w-full grid grid-cols-5 mx-auto gap-6">
+          <div><img src="/image/sponsor/1.png" alt="" /></div>
+          <div><img src="/image/sponsor/2.png" alt="" /></div>
+          <div><img src="/image/sponsor/3.png" alt="" /></div>
+          <div><img src="/image/sponsor/4.png" alt="" /></div>
+          <div><img src="/image/sponsor/5.png" alt="" /></div>
+          <div><img src="/image/sponsor/6.png" alt="" /></div>
+          <div><img src="/image/sponsor/7.png" alt="" /></div>
+          <div><img src="/image/sponsor/8.png" alt="" /></div>
+          <div><img src="/image/sponsor/9.png" alt="" /></div>
+          <div><img src="/image/sponsor/10.png" alt="" /></div>
         </div>
+      </section>
+      <!-- slider -->
+      <section class="slider_section px-11" >
+        <div class="slider_heading tetx-left">
+          <h1>State Of USA</h1>
+          <button class=" flex justify-around items-center">
+            <span class="">2024</span>
+            <select class=" bg-transparent" name="" id=""></select>
+          </button>
+          <p>
+            Click through the slides or download the report to view natively on
+            your device.
+          </p>
+        </div>
+
+      <section class="swiper_wrapper w-100  overflow-x-hidden">
+         <div
+          class="slider flex justify-center items-center  w-100 mx-auto gap-11 my-11"
+          id="slider"
+        >
+          <div class="slide">
+            <img src="/image/slider/1.png" alt="Image 1" />
+          </div>
+          <div class="slide">
+            <img src="/image/slider/2.png" alt="Image 2" />
+          </div>
+          <div class="slide">
+            <img src="/image/slider/2.png" alt="Image 2" />
+          </div>
+          <div class="slide">
+            <img src="/image/slider/2.png" alt="Image 2" />
+          </div>
+          <div class="slide">
+            <img src="/image/slider/3.png" alt="Image 3" />
+          </div>
+          <div class="slide">
+            <img src="/image/slider/1.png" alt="Image 3" />
+          </div>
+          <div class="slide">
+            <img src="/image/slider/3.png" alt="Image 3" />
+          </div>
+          <div class="slide">
+            <img src="/image/slider/1.png" alt="Image 4" />
+          </div>
+        </div>
+      </section>
+        <div class="nav-container flex items-center justify-between my-24">
+          <div class="flex space-x-6">
+            <div class="space-x-6">
+              <button
+                id="prev"
+                class="slide_nav border py-[15px] px-[20px] my-auto mx-auto bg-white rounded-[260px]"
+              >
+                &larr;
+              </button>
+              <button
+                id="next"
+                class="slide_nav border py-[15px] px-[20px] my-auto mx-auto bg-white rounded-[260px]"
+              >
+                &rarr;
+              </button>
+            </div>
+            <div class="pagination" id="pagination">
+              <p class="mr-6">Pages</p>
+              <div class="z-10 space-x-3pl-3">
+                <span id="current-page">1</span>
+                and
+                <span id="next-page">2</span>
+              </div>
+              <div class="relative -ml-[70px]">
+                <input
+                  class="border w-[120px] py-[7px] bg-white rounded-[260px]"
+                  type="number"
+                />
+                <select class="-ml-[30px] my-auto" name="" id=""></select>
+              </div>
+              <div class="mx-3">of <span id="total-pages">4</span></div>
+            </div>
+          </div>
+          <div>
+            <button
+              class="bg-[#2042B6] rounded-[124px] text-white text-[400] p-[10px]"
+            >
+              Download the 2023 Report
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- stories -->
+       <section class="stories px-11 my-11">
+        <div class="stories ">
+          <h1>Stories & Ideas</h1> 
+          <p>The latest news and updates</p>
+        </div>
+       <div class="storyTailer mt-[80px] w-full lg:flex flex-col justify-center gap-6 mx-auto ">
+      <div class="flex justify-between items-center gap-6 mb-[80px]">
+   <div class="w-[380px] h-[220px] rounded-[8px] bg-white">
+    <img src="/image/storyImage/1.png" alt="">
+   <div class="card_content space-y-2">
+     <h3>By: Sahabuddin Sagor</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
+    <button class="bg-[#2042B6] rounded-[124px] text-white text-[400] p-[10px]">Read More</button>
+   </div>
+   </div>
+   <div class="w-[380px] h-[220px] rounded-[8px] bg-white">
+    <img src="/image/storyImage/2.png" alt="">
+    <div class="card_content space-y-2">
+      <h3>By: Nayem Khan</h3>
+    <p>Lorem ipsum dolor sit amet consectetur</p>
+    <button class="bg-[#2042B6] rounded-[124px] text-white text-[400] p-[10px]">Read More</button>
+    </div>
+   </div>
+   <div class="w-[380px] h-[220px] rounded-[8px] bg-white">
+    <img src="/image/storyImage/3.png" alt="">
+    <div class="card_content space-y-2"><h3>By: Sahabuddin Sagor</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
+    <button class="bg-[#2042B6] rounded-[124px] text-white text-[400] p-[10px]">Read More</button></div>
+   </div>
+      </div>
+      <div class="flex justify-between items-center gap-6">
+   <div class="w-[380px] h-[220px] rounded-[8px] bg-white">
+    <img src="/image/storyImage/1.png" alt="">
+   <div class="card_content space-y-2"> <h3>By: Sahabuddin Sagor</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
+    <button class="bg-[#2042B6] rounded-[124px] text-white text-[400] p-[10px]">Read More</button></div>
+   </div>
+   <div class="w-[380px] h-[220px] rounded-[8px] bg-white">
+    <img src="/image/storyImage/2.png" alt="">
+    <div class="card_content space-y-2">
+      <h3>By: Nayem Khan</h3>
+    <p>Lorem ipsum dolor sit amet consectetur</p>
+    <button class="bg-[#2042B6] rounded-[124px] text-white text-[400] p-[10px]">Read More</button>
+    </div>
+   </div>
+   <div class="w-[380px] h-[220px] rounded-[8px] bg-white">
+    <img src="/image/storyImage/3.png" alt="">
+    <div class="card_content space-y-2"><h3>By: Sahabuddin Sagor</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
+    <button class="bg-[#2042B6] rounded-[124px] text-white text-[400] p-[10px]">Read More</button></div>
+    
+   </div>
+      </div>
+
+       </div>
+          
        </section>
     </main>
     <footer></footer>
+
+    <!-- javascript -->
+    <script src="/script.js"></script>
   </body>
 </html>

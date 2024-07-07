@@ -255,3 +255,32 @@
 .about button {
     box-shadow: 0px 24px 36px 0px #00000040;
 }
+
+/* portfolio companies */
+.portfolio_companies div div {
+    width: 1180px;
+        height: 540px;
+        top: 5342px;
+        left: 93px;
+        gap: 0px;
+        opacity: 0px;
+}
+.portfolio_companies h1{
+    font-family: Nantes;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 67.63px;
+        text-align: left;
+}
+.portfolio_companies div div div{
+    width: 180px;
+        height: 94px;
+ 
+      
+   
+}
+.portfolio_companies img{
+    background: white;
+    padding: 40px;
+    margin: 20px;
+}

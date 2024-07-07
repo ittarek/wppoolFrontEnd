@@ -4,6 +4,11 @@
 
     box-sizing: border-box;
 }
+body main{
+margin: 0;
+    padding: 0;
+    
+}
 
 
 /* Banner */
@@ -257,13 +262,11 @@
 }
 
 /* portfolio companies */
-.portfolio_companies div div {
-    width: 1180px;
-        height: 540px;
-        top: 5342px;
-        left: 93px;
-        gap: 0px;
-        opacity: 0px;
+.portfolio_companies   {
+    /* width: 1180px;
+        height: 540px; */
+     
+      
 }
 .portfolio_companies h1{
     font-family: Nantes;
@@ -272,15 +275,23 @@
         line-height: 67.63px;
         text-align: left;
 }
-.portfolio_companies div div div{
-    width: 180px;
-        height: 94px;
+.portfolio_companies div div div {
+  
+    width: 220px;
+        height: 120px;
+      
+        background: white;
  
       
    
 }
-.portfolio_companies img{
-    background: white;
-    padding: 40px;
-    margin: 20px;
+.portfolio_companies div div img{
+     margin: auto;
+     padding: 40px 20px;
+}
+.portfolio_companies div div:nth-child(3) img{
+    margin-top: -20px;
+}
+.portfolio_companies div div:nth-child(7) img{
+   margin-top: -20px;
 }

@@ -25,7 +25,8 @@ body {
     /* text-align: left; */
     display: block;
     margin-bottom: -12px;
-
+position: relative
+;
 }
 
 .text_side span {
@@ -37,7 +38,51 @@ body {
     color: #CDCDCD;
 
 }
+/* header */
 
+
+.menuToggle {
+    cursor: pointer;
+   z-index: 10000;
+}
+
+.menuItems {
+    display: none;
+width: 338px;
+    height: 500px;
+   border-radius: 18px;
+   background-color: #FAFAFA;
+   position: absolute;
+   right: 0;
+   top: -15px;
+   margin-right: 5px;
+z-index: 9999;
+ 
+}
+
+.menuItems.active {
+    display: block;
+  
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list li {
+    padding: 10px;
+    z-index: 100;
+}
+
+
+
+.menu-list li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    z-index: 11;
+}
 /* all companies */
 .com_input input::placeholder {
     color: #191618;
@@ -378,4 +423,16 @@ padding-bottom: 20px;
     line-height: 19.04px;
     text-align: left;
     color: #9FA0A1;
+}
+
+
+footer .icon button i{
+    color: #9FA0A1;
+    width: 27px;
+        height: 27px;
+}
+footer .icon button i:last-child{
+    color: #9FA0A1;
+    width: 30px;
+        height: 24.38px;
 }

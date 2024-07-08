@@ -4,10 +4,12 @@
 
     box-sizing: border-box;
 }
-body main{
-margin: 0;
+
+body {
+    margin: 0;
     padding: 0;
-    
+    background: #EDEDED;
+
 }
 
 
@@ -262,36 +264,118 @@ margin: 0;
 }
 
 /* portfolio companies */
-.portfolio_companies   {
+.portfolio_companies {
     /* width: 1180px;
         height: 540px; */
-     
-      
+
+
 }
-.portfolio_companies h1{
+
+.portfolio_companies h1 {
     font-family: Nantes;
-        font-size: 48px;
-        font-weight: 400;
-        line-height: 67.63px;
-        text-align: left;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 67.63px;
+    text-align: left;
 }
+
 .portfolio_companies div div div {
-  
+
     width: 220px;
-        height: 120px;
-      
-        background: white;
- 
-      
-   
+    height: 120px;
+
+    background: white;
+
+
+
 }
-.portfolio_companies div div img{
-     margin: auto;
-     padding: 40px 20px;
+
+.portfolio_companies div div img {
+    margin: auto;
+    padding: 40px 20px;
 }
-.portfolio_companies div div:nth-child(3) img{
+
+.portfolio_companies div div:nth-child(3) img {
     margin-top: -20px;
 }
-.portfolio_companies div div:nth-child(7) img{
-   margin-top: -20px;
+
+.portfolio_companies div div:nth-child(7) img {
+    margin-top: -20px;
+}
+
+
+/* footer */
+.footer_summary {
+    width: 454px;
+    height: 196px;
+}
+
+.footer_summary h1 {
+    font-family: Nantes;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48.96px;
+    text-align: left;
+}
+
+footer ul {
+
+    width: 84px;
+    height: 230px;
+}
+
+footer ul li {
+
+    font-family: Neue Haas Unica W1G;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30.12px;
+    text-align: left;
+    color: #115CD9;
+}
+
+footer ul li:first-child {
+    color: #9FA0A1
+}
+
+.footer_right_items h1 {
+    font-family: Messina Sans;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        color: #191618;
+}
+.footer_right_items p {
+    font-family: Messina Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+}
+.footer_right_items  div  {
+padding-bottom: 20px;
+    border-bottom: 1px solid #9FA0A1;
+ 
+}
+.footer_right_items  div:last-child  {
+    border:none;
+ 
+}
+
+.footer_bottom p {
+    font-family: Messina Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.04px;
+    text-align: left;
+}
+
+.footer_bottom p:first-child {
+    font-family: Messina Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.04px;
+    text-align: left;
+    color: #9FA0A1;
 }

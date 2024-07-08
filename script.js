@@ -1,3 +1,15 @@
+// for header
+window.addEventListener("scroll", function(){
+  let header = document.getElementsByTagName("header")[0];
+  if(window.scrollY > 0 ){
+    header.classList.add("sticky");
+    
+  }else{
+    header.classList.remove("sticky");
+    }
+})
+
+
 let menuToggle = document.querySelector(".menuToggle");
 let menuItems = document.querySelector(".menuItems");
 let menuItemsLi = document.querySelectorAll(".menuItems li");

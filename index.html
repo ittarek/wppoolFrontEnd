@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/image/siteLogo.png" type="image/png" />
+    <link rel="icon" href="/image/logo.png" type="image/png" />
     <!-- font awesome cdn -->
     <link
       rel="stylesheet"
@@ -23,46 +23,46 @@
     <title>Wppool</title>
   </head>
   <body>
-    <header class="relative z-10 px-9 my-6">
+    <header class="px-3 xl:px-9 my-6">
       <nav class="flex items-centar justify-between">
         <!-- logo -->
         <div class=" ">
-          <img class="" src="/image/siteLogo.png" alt="" />
+          <img class="site-logo" src="/image/siteLogo.png" alt="Original Logo" />
+            <img class="site-logo-new hidden-logo hidden" src="/image/logoSticky.png" alt="New Logo" />
         </div>
 
-        <div class="space-x-3">
-          <button>
+        <div class="navBtn  space-x-3 flex">
+          <button class="hidden shareBtn lg:block">
             <i
               class="border p-[14px] my-auto mx-auto text-white rounded-[124px] fa-solid fa-share-nodes"
             ></i>
           </button>
 
-          <button class="border p-3 rounded-full text-white">
-            Download the 2024 Report
+          <button class="hidden lg:block border p-3 rounded-full text-white">
+            <a href="">Download the 2024 Report</a>
           </button>
-          <button class="text-white menuToggle">
+          <button class="text-white z-10 menuToggle">
             <i class="fa-solid fa-bars"></i>
           </button>
         </div>
       </nav>
       <div class="menuItems">
         <ul class="menu-list">
-          <div class="flex
-          justify-between items-centar mx-6 my-6">
+          <div class="flex justify-between items-centar mx-6 my-6">
             <button>
               <i
-                class="border p-[10px] my-auto mx-auto  rounded-[124px] text-white bg-[#AFCD80] fa-solid fa-share-nodes"
+                class="p-[14px] my-auto mx-auto rounded-[124px] text-white bg-[#AFCD80] fa-solid fa-share-nodes"
               ></i>
             </button>
 
-            <button class="border p-3 rounded-full ">
+            <button class="border p-3 rounded-full bg-[#2042B6] text-white">
               Download the 2024 Report
             </button>
-            <button class=" menuToggleclose">
-             <i class="fa-solid fa-xmark"></i>
+            <button class="menuToggleclose">
+              <i class="fa-solid fa-xmark"></i>
             </button>
           </div>
-          <li class="active"><a href="#">The WPPOOL Index</a></li>
+          <li><a href="#">The WPPOOL Index</a></li>
           <li><a href="#">All Companies</a></li>
           <li><a href="#">Potential Future Listings</a></li>
           <li><a href="#">State Of USA</a></li>
@@ -76,23 +76,35 @@
     <main class="">
       <!-- banner -->
       <section
-        class="banner pb-11 px-9 -mt-[107px] bg-[#2042B6] h-screen flex justify-between items-end gap-6"
+        class="banner pb-11 lg:px-9 px-3 -mt-[95px] xl:-mt-[110px] bg-[#2042B6] h-screen lg:flex justify-between items-end gap-6"
       >
-        <div class="text_side text-white space-y-[20px]">
-          <h1>60</h1>
-          <span>Companies</span>
-          <h1>$100B</h1>
-          <span>Market cap</span>
-          <h1>303x</h1>
-          <span>Revenue multiple</span>
-          <h1>60%</h1>
-          <span>LTM avg revenue growth rate</span>
+        <div
+          class="text_side gap-11 items-center relative z-[9] py-[100px] lg:py-[0px] text-white"
+        >
+          <div>
+            <div>
+              <h1>60</h1>
+              <span>Companies</span>
+            </div>
+            <div>
+              <h1>$100B</h1>
+              <span>Market cap</span>
+            </div>
+          </div>
+          <div>
+            <div>
+              <h1 class="">303x</h1>
+              <span>Revenue multiple</span>
+            </div>
+            <div>
+              <h1>60%</h1>
+              <span>LTM avg revenue growth rate</span>
+            </div>
+          </div>
         </div>
         <div class="image_side my-auto">
           <svg
-            class="absolute top-[10%] left-[32%]"
-            width="549"
-            height="542"
+            class="absolute xl:top-[10%] xl:left-[] xl-[549px] xl:h-[542px] top-[5%] left-0 w-[100%] h-[100%]"
             viewBox="0 0 549 542"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -128,15 +140,15 @@
           </svg>
 
           <img
-            class="absolute top-[10%] left-[30%]"
+            class="absolute xl:top-[10%] xl:left-[30%] top-[10%] left-0"
             src="/image/Rectangle 1.png"
             alt="rectangular"
           />
-          <div class="text-white relative z-10">
+          <div class="text-white middle_text relative">
             <h1 class="text-center lg:text-[78px]" style="font-family: Nantes">
               The WPPOOL Index
             </h1>
-            <p class="text-center text-[21px] font-[350]">
+            <p class="text-center lg:text-[21px] font-[350]">
               Monitor the performance of emerging, publicly traded, financial
               technology companies
             </p>
@@ -144,19 +156,19 @@
         </div>
         <div class="button_side">
           <i
-            class="border py-[18px] px-[20px] my-auto mx-auto bg-white rounded-[260px] bg-shite fa-solid fa-arrow-down"
+            class="py-[18px] px-[20px] my-auto mx-auto bg-white rounded-[260px] bg-shite fa-solid fa-arrow-down"
           ></i>
         </div>
       </section>
       <!-- all companies -->
       <section class="companies my-11 px-9">
         <div class="table_shadow bg-[#FAFAFA] rounded-[20px] p-6 mb-6">
-          <div class="companies_nav flex justify-between">
-            <h1 class="font-[400] text-[48px]" style="font-family: Nantes">
+          <div class="companies_nav flex justify-between items-center">
+            <h1 class="font-[400] lg:text-[48px]" style="font-family: Nantes">
               All Companies
             </h1>
             <div
-              class="com_input flex items-center border-[1px] rounded-[8px] border-[#DADADA] xl:w-[588px] xl:h-[58px] bg-gray-100"
+              class="com_input flex items-center border-[1px] rounded-[8px] border-[#DADADA] xl:w-[588px] xl:h-[58px] w-[100px] bg-gray-100"
             >
               <button id="button-addon2" type="submit" class="">
                 <i class="fa fa-search px-3"></i>
@@ -164,12 +176,14 @@
               <input
                 type="search"
                 placeholder="Search Companies"
-                class="bg-gray-100"
+                class="bg-gray-100 w-[70px] lg:w-[192px]"
               />
             </div>
           </div>
           <!-- table -->
-          <div class="my-11 overflow-x-auto sm:overflow-hidden">
+          <div
+            class="text-black my-11 overflow-x-auto sm:overflow-hidden mx-auto"
+          >
             <table class="min-w-full table-auto">
               <thead class="sticky">
                 <tr class="text-left">
@@ -302,7 +316,7 @@
           </div>
         </div>
 
-        <div class="table_btn w-[500px] mx-auto space-x-3">
+        <div class="table_btn lg:w-[500px] mx-auto lg:space-x-3 space-y-2">
           <button
             class="bg-[#2042B6] p-3 rounded-[124px] text-white text-[400] p-[18px]"
           >
@@ -316,7 +330,7 @@
         </div>
       </section>
       <!-- sponsor -->
-      <section class="sponsor px-9 my-11">
+      <section class="sponsor px-3 lg:px-9 my-11">
         <div class="ml-[10px] mb-11">
           <h1>Potential Future Listings</h1>
           <p>
@@ -326,7 +340,9 @@
             inceptos himenaeos.
           </p>
         </div>
-        <div class="sponsor_name w-full grid grid-cols-5 mx-auto gap-6">
+        <div
+          class="sponsor_name w-full grid lg:grid-cols-5 grid-cols-2 mx-auto gap-6"
+        >
           <div><img src="/image/sponsor/1.png" alt="" /></div>
           <div><img src="/image/sponsor/2.png" alt="" /></div>
           <div><img src="/image/sponsor/3.png" alt="" /></div>
@@ -340,7 +356,7 @@
         </div>
       </section>
       <!-- slider -->
-      <section class="slider_section px-11">
+      <section class="slider_section px-3 lg:px-11">
         <div class="slider_heading tetx-left">
           <h1>State Of USA</h1>
           <button class="flex justify-around items-center">
@@ -353,9 +369,9 @@
           </p>
         </div>
 
-        <section class="swiper_wrapper w-100 overflow-x-hidden">
+        <section class="swiper_wrapper overflow-x-hidden">
           <div
-            class="slider flex justify-center items-center w-100 mx-auto gap-11 my-11"
+            class="slider flex justify-between items-center mx-auto gap-11 my-11"
             id="slider"
           >
             <div class="slide">
@@ -365,27 +381,48 @@
               <img src="/image/slider/2.png" alt="Image 2" />
             </div>
             <div class="slide">
-              <img src="/image/slider/2.png" alt="Image 2" />
-            </div>
-            <div class="slide">
-              <img src="/image/slider/2.png" alt="Image 2" />
-            </div>
-            <div class="slide">
-              <img src="/image/slider/3.png" alt="Image 3" />
-            </div>
-            <div class="slide">
-              <img src="/image/slider/1.png" alt="Image 3" />
-            </div>
-            <div class="slide">
               <img src="/image/slider/3.png" alt="Image 3" />
             </div>
             <div class="slide">
               <img src="/image/slider/1.png" alt="Image 4" />
             </div>
+            <div class="slide">
+              <img src="/image/slider/2.png" alt="Image 5" />
+            </div>
+            <div class="slide">
+              <img src="/image/slider/3.png" alt="Image 6" />
+            </div>
+            <div class="slide">
+              <img src="/image/slider/1.png" alt="Image 7" />
+            </div>
+            <div class="slide">
+              <img src="/image/slider/2.png" alt="Image 8" />
+            </div>
+            <div class="slide">
+              <img src="/image/slider/3.png" alt="Image 8" />
+            </div>
+            <div class="slide">
+              <img src="/image/slider/1.png" alt="Image 8" />
+            </div>
+            <div class="slide">
+              <img src="/image/slider/2.png" alt="Image 8" />
+            </div>
+            <div class="slide">
+              <img src="/image/slider/2.png" alt="Image 8" />
+            </div>
+            <div class="slide">
+              <img src="/image/slider/2.png" alt="Image 8" />
+            </div>
+            <div class="slide">
+              <img src="/image/slider/2.png" alt="Image 8" />
+            </div>
+            <div class="slide">
+              <img src="/image/slider/2.png" alt="Image 8" />
+            </div>
           </div>
         </section>
-        <div class="nav-container flex items-center justify-between my-24">
-          <div class="flex space-x-6">
+        <div class="nav-container lg:flex items-center justify-between">
+          <div class="flex lg:space-x-6 space-x-[30px]">
             <div class="space-x-6">
               <button
                 id="prev"
@@ -402,24 +439,24 @@
             </div>
             <div class="pagination" id="pagination">
               <p class="mr-6">Pages</p>
-              <div class="z-10 space-x-3pl-3">
-                <span id="current-page">1</span>
+              <div class="z-10 space-x-3 pl-[10px] -mr-[20px]">
+                <span id="current-page" class="">1</span>
                 and
-                <span id="next-page">2</span>
+                <span id="next-page"></span>
               </div>
               <div class="relative -ml-[70px]">
                 <input
-                  class="border w-[120px] py-[7px] bg-white rounded-[260px]"
+                  class="border w-[150px] py-[7px]   bg-white rounded-[260px] "
                   type="number"
                 />
                 <select class="-ml-[30px] my-auto" name="" id=""></select>
               </div>
-              <div class="mx-3">of <span id="total-pages">4</span></div>
+              <div class="mx-3">of <span id="total-pages"></span></div>
             </div>
           </div>
           <div>
             <button
-              class="bg-[#2042B6] rounded-[124px] text-white text-[400] p-[10px]"
+              class="bg-[#2042B6] slider_download_btn rounded-[124px] text-white text-[400] p-[10px]"
             >
               Download the 2023 Report
             </button>
@@ -428,18 +465,18 @@
       </section>
 
       <!-- stories -->
-      <section class="stories px-11 my-11 mx-auto">
-        <div class="stories">
+      <section class="stories lg:px-11 px-3 my-11 mx-auto">
+        <div>
           <h1>Stories & Ideas</h1>
           <p>The latest news and updates</p>
         </div>
         <div
-          class="storyTailer mt-[80px] w-full lg:flex flex-col justify-center gap-6 mx-auto"
+          class="storyTailer lg:mt-[80px] w-full lg:flex flex-col justify-center gap-6 mx-auto"
         >
-          <div class="flex justify-between items-center gap-6 mb-[80px]">
+          <div class="lg:flex justify-between items-center gap-6 lg:mb-[80px]">
             <div class="w-[380px] h-[220px] rounded-[8px] bg-white">
               <img src="/image/storyImage/1.png" alt="" />
-              <div class="card_content space-y-2">
+              <div class="card_content lg:space-y-2">
                 <h3>By: Sahabuddin Sagor</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -454,7 +491,7 @@
             </div>
             <div class="w-[380px] h-[220px] rounded-[8px] bg-white">
               <img src="/image/storyImage/2.png" alt="" />
-              <div class="card_content space-y-2">
+              <div class="card_content lg:space-y-2">
                 <h3>By: Nayem Khan</h3>
                 <p>Lorem ipsum dolor sit amet consectetur</p>
                 <button
@@ -466,7 +503,7 @@
             </div>
             <div class="w-[380px] h-[220px] rounded-[8px] bg-white">
               <img src="/image/storyImage/3.png" alt="" />
-              <div class="card_content space-y-2">
+              <div class="card_content lg:space-y-2">
                 <h3>By: Sahabuddin Sagor</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -480,10 +517,10 @@
               </div>
             </div>
           </div>
-          <div class="flex justify-between items-center gap-6">
+          <div class="lg:flex justify-between items-center gap-6">
             <div class="w-[380px] h-[220px] rounded-[8px] bg-white">
               <img src="/image/storyImage/1.png" alt="" />
-              <div class="card_content space-y-2">
+              <div class="card_content lg:space-y-2">
                 <h3>By: Sahabuddin Sagor</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -498,7 +535,7 @@
             </div>
             <div class="w-[380px] h-[220px] rounded-[8px] bg-white">
               <img src="/image/storyImage/2.png" alt="" />
-              <div class="card_content space-y-2">
+              <div class="card_content lg:space-y-2">
                 <h3>By: Nayem Khan</h3>
                 <p>Lorem ipsum dolor sit amet consectetur</p>
                 <button
@@ -510,7 +547,7 @@
             </div>
             <div class="w-[380px] h-[220px] rounded-[8px] bg-white">
               <img src="/image/storyImage/3.png" alt="" />
-              <div class="card_content space-y-2">
+              <div class="card_content lg:space-y-2">
                 <h3>By: Sahabuddin Sagor</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -527,11 +564,11 @@
         </div>
       </section>
       <!-- about -->
-      <section class="about px-11 my-11 mx-auto">
+      <section class="about lg:px-11 px-3 my-11 mx-auto">
         <div
-          class="flex justify-between items-center bg-white p-6 rounded-[12px]"
+          class="lg:flex justify-between items-center bg:bg-white p-6 rounded-[12px]"
         >
-          <div class="w-[628px] h-[226px]">
+          <div class="lg:w-[628px] lg:h-[226px]">
             <h1>About WPPOOL</h1>
             <h2>Investing in wppool for over 50 years</h2>
             <p>
@@ -542,26 +579,28 @@
               similique accusantium nemo autem.
             </p>
             <button
-              class="bg-[#2042B6] rounded-[124px] text-white text-[400] p-[10px]"
+              class="bg-[#2042B6] rounded-[124px] text-white text-[400] p-[10px] mt-6"
             >
               Contact WPPOOL
             </button>
           </div>
-          <div>
+          <div class="hidden lg:block">
             <img src="/image/about.png" alt="" />
           </div>
         </div>
       </section>
 
       <!-- portfolio companies -->
-      <section class="portfolio_companies px-11 my-11">
-        <h1>Selected WPPOOL Portfolio Companies</h1>
+      <section class="portfolio_companies lg:px-11 px-3 my-11">
+        <h1 class="mb-6">Selected WPPOOL Portfolio Companies</h1>
 
         <div
           class="
         "
         >
-          <div class="grid grid-cols-5 items-center gap-[40px]">
+          <div
+            class="grid lg:grid-cols-5 grid-cols-2 items-center lg:gap-[40px] gap-[20px] mx-auto"
+          >
             <div><img src="/image/companies/1.png" alt="" /></div>
             <div><img src="/image/companies/2.png" alt="" /></div>
             <div>
@@ -588,8 +627,8 @@
         </div>
       </section>
     </main>
-    <footer class="px-11 py-16 mt-11 bg-[#E6E6E6]">
-      <section class="flex justify-start items-start gap-[220px]">
+    <footer class="px-3 lg:px-11 py-16 mt-11 bg-[#E6E6E6]">
+      <section class="lg:flex justify-start items-start gap-[220px]">
         <div class="footer_summary">
           <h1>
             Experience remarkable WordPress products with a new level of power,
@@ -638,7 +677,7 @@
           </div>
         </div>
       </section>
-      <div class="footer_bottom w-[517px] h-[105px]">
+      <div class="footer_bottom w-100 lg:w-[517px] h-[105px]">
         <p>©2024 Terms of Use Privacy Policy</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime

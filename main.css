@@ -14,7 +14,9 @@ body {
 
 
 /* Banner */
-
+.text_side div {
+    margin-bottom: 18px;
+}
 
 .text_side h1 {
 
@@ -25,8 +27,8 @@ body {
     /* text-align: left; */
     display: block;
     margin-bottom: -12px;
-position: relative
-;
+
+    ;
 }
 
 .text_side span {
@@ -38,41 +40,100 @@ position: relative
     color: #CDCDCD;
 
 }
+
 /* header */
 
+.sticky {
+    top: 0;
 
+    box-shadow: 0px 36px 66px 0px #0000001F;
+    z-index: 10;
+    transition: background 0.3s ease;
+    padding: 5px 0;
+    background: #FFFFFF;
+    color: #2042B6;
+    top: 10px;
+    margin: 0 35px;
+    border-radius: 8px;
+}
+/* New styles for sticky state */
+header.sticky .navBtn button i,
+header.sticky .navBtn button a,
+header.sticky .navBtn button {
+    color: #2042B6;
+}
+
+header.sticky .navBtn button {
+color: #2042B6;
+ 
+}
+header.sticky .navBtn #AFCD80 {
+border: 1px solid #AFCD80
+ 
+}
+
+header.sticky .navBtn button .fa-share-nodes,
+header.sticky .navBtn button .fa-bars {
+color: #2042B6;
+  
+}
+
+/* Add class to hide and show the new logo */
+.hidden_logo {
+    display: none;
+}
+
+header.sticky .site-logo,
+header.sticky .site-logo-new {
+    display: none;
+}
+
+header.sticky .site-logo-new {
+    display: block;
+}
 .menuToggle {
     cursor: pointer;
-   z-index: 10000;
+    z-index: 10000;
 }
 
 .menuItems {
     display: none;
-width: 338px;
+    width: 338px;
     height: 500px;
-   border-radius: 18px;
-   background-color: #FAFAFA;
-   position: absolute;
-   right: 0;
-   top: -15px;
-   margin-right: 5px;
-z-index: 9999;
- 
+    border-radius: 18px;
+    background-color: #FAFAFA;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    margin-right: 5px;
+    z-index: 9999;
+
+
 }
 
 .menuItems.active {
     display: block;
-  
+
 }
 
 .menu-list {
     list-style: none;
-    padding: 0;
+
 }
 
+
 .menu-list li {
-    padding: 10px;
+    font-family: Messina Sans;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-align: left;
+    padding: 10px 10px 15px 30px;
     z-index: 100;
+}
+
+.menu-list li:last-child {
+    color: #2042B6;
 }
 
 
@@ -83,6 +144,7 @@ z-index: 9999;
     display: block;
     z-index: 11;
 }
+
 /* all companies */
 .com_input input::placeholder {
     color: #191618;
@@ -217,10 +279,11 @@ z-index: 9999;
 
 .pagination span {
     font-weight: bold;
+
 }
 
 /* stories */
-.stories h1 {
+.stories div h1 {
     font-family: Nantes;
     font-size: 48px;
     font-weight: 400;
@@ -228,7 +291,7 @@ z-index: 9999;
     text-align: left;
 }
 
-.stories p {
+.stories div p {
     font-family: Messina Sans;
     font-size: 20px;
     font-weight: 350;
@@ -309,12 +372,6 @@ z-index: 9999;
 }
 
 /* portfolio companies */
-.portfolio_companies {
-    /* width: 1180px;
-        height: 540px; */
-
-
-}
 
 .portfolio_companies h1 {
     font-family: Nantes;
@@ -385,12 +442,13 @@ footer ul li:first-child {
 
 .footer_right_items h1 {
     font-family: Messina Sans;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 24px;
-        text-align: left;
-        color: #191618;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #191618;
 }
+
 .footer_right_items p {
     font-family: Messina Sans;
     font-size: 20px;
@@ -398,14 +456,16 @@ footer ul li:first-child {
     line-height: 28px;
     text-align: left;
 }
-.footer_right_items  div  {
-padding-bottom: 20px;
+
+.footer_right_items div {
+    padding-bottom: 20px;
     border-bottom: 1px solid #9FA0A1;
- 
+
 }
-.footer_right_items  div:last-child  {
-    border:none;
- 
+
+.footer_right_items div:last-child {
+    border: none;
+
 }
 
 .footer_bottom p {
@@ -426,13 +486,199 @@ padding-bottom: 20px;
 }
 
 
-footer .icon button i{
+footer .icon button i {
     color: #9FA0A1;
     width: 27px;
-        height: 27px;
+    height: 27px;
 }
-footer .icon button i:last-child{
+
+footer .icon button i:last-child {
     color: #9FA0A1;
     width: 30px;
-        height: 24.38px;
+    height: 24.38px;
+}
+
+/* responsive for mobile  */
+@media screen and (max-width: 640px) {
+
+    /* nav */
+    .menuItems {
+
+        top: 10px;
+        margin-right: 5px;
+        z-index: 9999;
+
+    }
+
+    /* banner */
+    .text_side div div span {
+
+        font-size: 16px;
+
+    }
+
+    .text_side {
+
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+
+    .middle_text {
+
+        margin-top: -50px;
+    }
+
+    .middle_text h1 {
+        font-size: 30px;
+
+    }
+
+    .middle_text p {
+        font-size: 20px;
+
+    }
+
+    .button_side {
+        position: absolute;
+        right: 0;
+        margin-right: 8px;
+        bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    /* table  */
+    .table_btn button {
+        width: 100%;
+    }
+
+    /* sponsor */
+    .sponsor_name div {
+        width: 100%;
+    }
+
+    .sponsor h1 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .sponsor p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sponsor_name div img {
+        width: 100px;
+        height: 50px;
+        margin: 30px;
+    }
+
+
+    /* slider */
+    .slider_heading h1 {
+
+        text-align: center;
+    }
+
+    .slider_heading button {
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    .slider_heading p {
+        text-align: center;
+    }
+
+    .slider_download_btn {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+
+    /* stories */
+    .stories div h1,
+    .stories div p {
+        text-align: center;
+
+    }
+
+    .stories div {
+        margin-bottom: 100px;
+    }
+
+    .storyTailer div {
+
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .storyTailer .card_content {
+        padding: 5px 0px 35px 20px;
+
+    }
+
+    .storyTailer img {
+        height: 100px
+    }
+
+    /* about */
+    .about {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("/image/about.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-blend-mode: darken;
+    }
+
+    .about h1 {
+        text-align: center;
+        font-size: 48px;
+        color: #FAFAFA;
+
+    }
+
+    .about h2 {
+        text-align: center;
+        font-size: 30px;
+        color: #FAFAFA;
+    }
+
+    .about p {
+        font-size: 16px;
+        text-align: center;
+        margin: 5px 0 10px 0;
+        color: #FAFAFA;
+
+    }
+
+    .about button {
+        width: 100%;
+    }
+
+    /* portfolio Companies */
+    .portfolio_companies h1 {
+
+        font-size: 28px;
+
+        text-align: center;
+    }
+
+    .portfolio_companies div div div {
+
+        width: 100%;
+    }
+
+    /* footer */
+    .footer_summary {
+        width: 100%;
+        height: 100px;
+    }
+
+    .footer_summary h1 {
+        font-size: 26px;
+        line-height: 30px;
+
+    }
 }

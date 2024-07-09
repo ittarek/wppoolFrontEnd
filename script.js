@@ -1,15 +1,111 @@
 // for header
-window.addEventListener("scroll", function(){
+window.addEventListener("scroll", function () {
   let header = document.getElementsByTagName("header")[0];
-  if(window.scrollY > 0 ){
+  if (window.scrollY > 520) {
     header.classList.add("sticky");
-    
-  }else{
+  } else {
     header.classList.remove("sticky");
-    }
-})
+  }
+});
 
+// for select
+  document.querySelectorAll(".custom-select").forEach(select => {
+    select.addEventListener("focus", function () {
+      this.parentElement.classList.add("focused");
+    });
+    select.addEventListener("blur", function () {
+      this.parentElement.classList.remove("focused");
+    });
+  });
 
+  // for chart
+document.addEventListener("DOMContentLoaded", function () {
+  const ctx = document.getElementById("myChart").getContext("2d");
+
+  const data = {
+    labels: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+    datasets: [
+      {
+        label: "WPPOOL",
+        data: [
+          0, 5, 0, 20, 22, 10, 35, 55, 40, 65, 40, 60, 30, 30, 25, 22, 22, 30,
+          25, 40, 35, 45, 35, 35, 43, 38, 45, 40, 35, 40, 35, 45, 50, 60, 45,
+          55, 50, 25, 22, 22, 30, 25, 40, 35, 45, 35, 35, 43, 38, 45, 40, 35,
+          40, 35, 45, 50, 60, 45, 55, 50,
+        ],
+        borderColor: "#ff0000",
+        backgroundColor: "rgba(255, 0, 0, 0.2)",
+        width: "20px",
+        height: "20px",
+        fill: false,
+      },
+      {
+        label: "Google",
+        data: [0, 5, 15, 25, 35, 45],
+        borderColor: "#00ff00",
+        backgroundColor: "rgba(0, 255, 0, 0.2)",
+        fill: false,
+      },
+      {
+        label: "Microsoft",
+        data: [0, 15, 10, 20, 30, 40],
+        borderColor: "#0000ff",
+        backgroundColor: "rgba(0, 0, 255, 0.2)",
+        fill: false,
+      },
+      {
+        label: "Twitter",
+        data: [0, 10, 25, 15, 20, 30],
+        borderColor: "#ff00ff",
+        backgroundColor: "rgba(255, 0, 255, 0.2)",
+        fill: false,
+      },
+    ],
+  };
+
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: "bottom",
+      },
+      tooltip: {
+        mode: "index",
+        intersect: false,
+      },
+    },
+    hover: {
+      mode: "nearest",
+      intersect: true,
+    },
+    scales: {
+      x: {
+        display: true,
+        title: {
+          display: false,
+          text: "WAPPOOL",
+        },
+       
+      },
+      y: {
+        display: true,
+        title: {
+          display: true,
+          text: "Count",
+        },
+        beginAtZero: true,
+      },
+    },
+  };
+
+  new Chart(ctx, {
+    type: "line",
+    data: data,
+    options: options,
+  });
+});
+
+// for menu
 let menuToggle = document.querySelector(".menuToggle");
 let menuItems = document.querySelector(".menuItems");
 let menuItemsLi = document.querySelectorAll(".menuItems li");
@@ -49,15 +145,7 @@ document.getElementById("prev").addEventListener("click", () => {
   goToSlide(currentSlide - 1);
 });
 
-// document.getElementById("go-to-page").addEventListener("click", () => {
-//   const pageNumber = parseInt(pageInput.value, 10);
-//   if (pageNumber >= 1 && pageNumber <= slides.length) {
-//     goToSlide(pageNumber - 1);
-//     pageInput.value = "";
-//   } else {
-//     alert(`Please enter a number between 1 and ${slides.length}.`);
-//   }
-// });
+
 
 function goToSlide(n) {
   currentSlide = (n + slides.length) % slides.length;

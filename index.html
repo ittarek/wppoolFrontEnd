@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Wppool</title>
   </head>
   <body>
@@ -27,11 +28,19 @@
       <nav class="flex items-centar justify-between">
         <!-- logo -->
         <div class=" ">
-          <img class="site-logo" src="/image/siteLogo.png" alt="Original Logo" />
-            <img class="site-logo-new hidden-logo hidden" src="/image/logoSticky.png" alt="New Logo" />
+          <img
+            class="site-logo"
+            src="/image/siteLogo.png"
+            alt="Original Logo"
+          />
+          <img
+            class="site-logo-new hidden-logo hidden"
+            src="/image/logoSticky.png"
+            alt="New Logo"
+          />
         </div>
 
-        <div class="navBtn  space-x-3 flex">
+        <div class="navBtn space-x-3 flex">
           <button class="hidden shareBtn lg:block">
             <i
               class="border p-[14px] my-auto mx-auto text-white rounded-[124px] fa-solid fa-share-nodes"
@@ -76,7 +85,7 @@
     <main class="">
       <!-- banner -->
       <section
-        class="banner pb-11 lg:px-9 px-3 -mt-[95px] xl:-mt-[110px] bg-[#2042B6] h-screen lg:flex justify-between items-end gap-6"
+        class="banner pb-11 lg:px-9 px-3 lg:h-screen -mt-[95px] xl:-mt-[110px] lg:-mt-[115px] bg-[#2042B6] h-screen lg:flex justify-between items-end gap-6"
       >
         <div
           class="text_side gap-11 items-center relative z-[9] py-[100px] lg:py-[0px] text-white"
@@ -104,7 +113,7 @@
         </div>
         <div class="image_side my-auto">
           <svg
-            class="absolute xl:top-[10%] xl:left-[] xl-[549px] xl:h-[542px] top-[5%] left-0 w-[100%] h-[100%]"
+            class="absolute xl:top-[10%] lg:h-[90%] xl:left-[] xl-[549px] xl:h-[542px] top-[5%] left-0 w-[100%] h-[100%]"
             viewBox="0 0 549 542"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +149,7 @@
           </svg>
 
           <img
-            class="absolute xl:top-[10%] xl:left-[30%] top-[10%] left-0"
+            class="absolute xl:top-[10%] xl:left-[30%] lg:left-[20%] lg:h-[90%] top-[10%] left-0"
             src="/image/Rectangle 1.png"
             alt="rectangular"
           />
@@ -160,30 +169,121 @@
           ></i>
         </div>
       </section>
+      <!-- chart -->
+
+      <section class="chart bg-white my-11 lg:px-9 px-3">
+        <section class="lg:flex justify-between items-centar gap-[20px]">
+          <div
+            class="chart_left_side xl:w-[224px] xl:h-[602px] bg-[#EFF3F6] flex flex-col text-[#647888] space-y-3 px-3 pt-3"
+          >
+            <div class="custom-select-wrapper">
+              <select
+                class="custom-select bg-[#2042B6] text-white rounded-[14px]"
+                name="The Index"
+                id=""
+              >
+                <option value="The Index">The Index</option>
+              </select>
+            </div>
+            <div class="custom-select-wrapper">
+              <select
+                class="custom-select bg-[#2042B6] text-white rounded-[14px]"
+                name="The Index"
+                id=""
+              >
+                <option value="The Index">The Index</option>
+              </select>
+            </div>
+            <div class="custom-select-wrapper">
+              <select
+                class="custom-select bg-[#2042B6] text-white rounded-[14px]"
+                name="The Index"
+                id=""
+              >
+                <option value="The Index">The Index</option>
+              </select>
+            </div>
+            <select class="bg-[#EFF3F6]" name="The Index" id="">
+              <option value="">The Index Tab Two</option>
+            </select>
+            <select class="bg-[#EFF3F6]" name="The Index" id="">
+              <option value="">The Index Tab Three</option>
+            </select>
+            <select class="bg-[#EFF3F6]" name="The Index" id="">
+              <option value="">The Index Tab Four</option>
+            </select>
+            <select class="bg-[#EFF3F6]" name="The Index" id="">
+              <option value="">The Index Tab Five</option>
+            </select>
+          </div>
+          <div>
+            <div class="chart_heading"><h1>The WPPOOP Index</h1></div>
+
+            <div class="chart_sum flex justify-between items-center gap-6">
+              <div>
+                <h1>+66.2%</h1>
+                <p class="border border-r-8 border-red-400">WPPOOP Index</p>
+              </div>
+              <div>
+                <h1>+26.6%</h1>
+                <p class="border border-r-8 border-red-400">Google Index</p>
+              </div>
+              <div>
+                <h1>+34.1%</h1>
+                <p class="border border-r-8 border-red-400">Microsoft</p>
+              </div>
+              <div>
+                <h1>+17%</h1>
+                <p class="border border-r-8 border-red-400">Twitter Index</p>
+              </div>
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center gap-6">
+                <section class="bg-blue-800 text-white">
+                  <option value="">Sectors</option>
+                </section>
+                <section class="bg-blue-800 text-white">
+                  <option value="">Types Of IPO</option>
+                </section>
+              </div>
+              <div class="bg-[#EFF3F6] flex space-x-3 text-end">
+                <p>1Y</p>
+                <p>YTD</p>
+                <p class="bg-[#2042B6">6M</p>
+                <p>1M</p>
+                <p>1W</p>
+              </div>
+            </div>
+            <canvas class="xl:w-[934px] xl:h-[294px]" id="myChart"></canvas>
+          </div>
+        </section>
+      </section>
+
       <!-- all companies -->
-      <section class="companies my-11 px-9">
-        <div class="table_shadow bg-[#FAFAFA] rounded-[20px] p-6 mb-6">
-          <div class="companies_nav flex justify-between items-center">
-            <h1 class="font-[400] lg:text-[48px]" style="font-family: Nantes">
+      <section class="companies my-11 lg:px-9">
+        <div class="table_shadow bg-[#FAFAFA] rounded-[20px] lg:p-6 mb-6">
+          <div class="companies_nav lg:flex justify-between items-center">
+            <h1
+              class="font-[400] text-center lg:text-left lg:text-[48px]"
+              style="font-family: Nantes"
+            >
               All Companies
             </h1>
             <div
-              class="com_input flex items-center border-[1px] rounded-[8px] border-[#DADADA] xl:w-[588px] xl:h-[58px] w-[100px] bg-gray-100"
+              class="com_input flex items-center border-[1px] rounded-[8px] border-[#DADADA]"
             >
-              <button id="button-addon2" type="submit" class="">
+              <button class="">
                 <i class="fa fa-search px-3"></i>
               </button>
               <input
                 type="search"
                 placeholder="Search Companies"
-                class="bg-gray-100 w-[70px] lg:w-[192px]"
+                class="xl:w-[588px] xl:h-[58px] mx-auto lg:w-[200px] w-100 bg-gray-100 px-3 xl:w-[192px] lg:w-[150px]"
               />
             </div>
           </div>
           <!-- table -->
-          <div
-            class="text-black my-11 overflow-x-auto sm:overflow-hidden mx-auto"
-          >
+          <div class="text-black table_div my-11 overflow-x-auto w-100 px-3">
             <table class="min-w-full table-auto">
               <thead class="sticky">
                 <tr class="text-left">
@@ -341,7 +441,7 @@
           </p>
         </div>
         <div
-          class="sponsor_name w-full grid lg:grid-cols-5 grid-cols-2 mx-auto gap-6"
+          class="sponsor_name grid xl:grid-cols-5 grid-cols-2 lg:grid-cols-5 mx-auto gap-6"
         >
           <div><img src="/image/sponsor/1.png" alt="" /></div>
           <div><img src="/image/sponsor/2.png" alt="" /></div>
@@ -422,8 +522,10 @@
           </div>
         </section>
         <div class="nav-container lg:flex items-center justify-between">
-          <div class="flex lg:space-x-6 space-x-[30px]">
-            <div class="space-x-6">
+          <div
+            class="lg:flex mx-auto lg:mx-0 text-center lg:text-left lg:space-x-6"
+          >
+            <div class="space-x-6 mb-3 lg:mb-0">
               <button
                 id="prev"
                 class="slide_nav border py-[15px] px-[20px] my-auto mx-auto bg-white rounded-[260px]"
@@ -437,7 +539,7 @@
                 &rarr;
               </button>
             </div>
-            <div class="pagination" id="pagination">
+            <div class="pagination mx-auto" id="pagination">
               <p class="mr-6">Pages</p>
               <div class="z-10 space-x-3 pl-[10px] -mr-[20px]">
                 <span id="current-page" class="">1</span>
@@ -446,7 +548,7 @@
               </div>
               <div class="relative -ml-[70px]">
                 <input
-                  class="border w-[150px] py-[7px]   bg-white rounded-[260px] "
+                  class="border w-[150px] py-[7px] bg-white rounded-[260px]"
                   type="number"
                 />
                 <select class="-ml-[30px] my-auto" name="" id=""></select>
@@ -564,14 +666,14 @@
         </div>
       </section>
       <!-- about -->
-      <section class="about lg:px-11 px-3 my-11 mx-auto">
+      <section class="about lg:px-11 px-3 my-11 mx-auto w-full">
         <div
-          class="lg:flex justify-between items-center bg:bg-white p-6 rounded-[12px]"
+          class="lg:flex justify-between items-center lg:bg-white p-6 rounded-[12px]"
         >
-          <div class="lg:w-[628px] lg:h-[226px]">
+          <div class="xl:w-[628px] lg:w-100 xl:h-[226px]">
             <h1>About WPPOOL</h1>
             <h2>Investing in wppool for over 50 years</h2>
-            <p>
+            <p class="lg:w-[90%]">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
               mollitia,molestiae quas vel sint commodi repudiandae consequuntur
               voluptatum laborumnumquam blanditiis harum quisquam eius sed odit
@@ -579,7 +681,7 @@
               similique accusantium nemo autem.
             </p>
             <button
-              class="bg-[#2042B6] rounded-[124px] text-white text-[400] p-[10px] mt-6"
+              class="bg-[#2042B6] rounded-[124px] text-white text-[400] p-[10px] mt-6 lg:mb-[20px]"
             >
               Contact WPPOOL
             </button>
@@ -591,39 +693,34 @@
       </section>
 
       <!-- portfolio companies -->
-      <section class="portfolio_companies lg:px-11 px-3 my-11">
+      <section class="portfolio_companies lg:px-11 px-3 my-11 mx-auto">
         <h1 class="mb-6">Selected WPPOOL Portfolio Companies</h1>
 
         <div
-          class="
-        "
+          class="grid xl:grid-cols-5 grid-cols-2 items-center xl:gap-[40px] gap-[20px] mx-auto"
         >
-          <div
-            class="grid lg:grid-cols-5 grid-cols-2 items-center lg:gap-[40px] gap-[20px] mx-auto"
-          >
-            <div><img src="/image/companies/1.png" alt="" /></div>
-            <div><img src="/image/companies/2.png" alt="" /></div>
-            <div>
-              <img src="/image/companies/3-removebg-preview.png" alt="" />
-            </div>
-            <div><img src="/image/companies/4.png" alt="" /></div>
-            <div><img src="/image/companies/5.png" alt="" /></div>
-            <div><img src="/image/companies/6.png" alt="" /></div>
-            <div><img src="/image/companies/7.png" alt="" /></div>
-            <div><img src="/image/companies/8.png" alt="" /></div>
-            <div><img src="/image/companies/8.png" alt="" /></div>
-            <div><img src="/image/companies/10.png" alt="" /></div>
-            <div><img src="/image/companies/11.png" alt="" /></div>
-            <div><img src="/image/companies/12.png" alt="" /></div>
-            <div><img src="/image/companies/13.png" alt="" /></div>
-            <div><img src="/image/companies/14.png" alt="" /></div>
-            <div><img src="/image/companies/15.png" alt="" /></div>
-            <div><img src="/image/companies/16.png" alt="" /></div>
-            <div><img src="/image/companies/17.png" alt="" /></div>
-            <div><img src="/image/companies/18.png" alt="" /></div>
-            <div><img src="/image/companies/19.png" alt="" /></div>
-            <div><img src="/image/companies/20.png" alt="" /></div>
+          <div><img src="/image/companies/1.png" alt="" /></div>
+          <div><img src="/image/companies/2.png" alt="" /></div>
+          <div>
+            <img src="/image/companies/3-removebg-preview.png" alt="" />
           </div>
+          <div><img src="/image/companies/4.png" alt="" /></div>
+          <div><img src="/image/companies/5.png" alt="" /></div>
+          <div><img src="/image/companies/6.png" alt="" /></div>
+          <div><img src="/image/companies/7.png" alt="" /></div>
+          <div><img src="/image/companies/8.png" alt="" /></div>
+          <div><img src="/image/companies/8.png" alt="" /></div>
+          <div><img src="/image/companies/10.png" alt="" /></div>
+          <div><img src="/image/companies/11.png" alt="" /></div>
+          <div><img src="/image/companies/12.png" alt="" /></div>
+          <div><img src="/image/companies/13.png" alt="" /></div>
+          <div><img src="/image/companies/14.png" alt="" /></div>
+          <div><img src="/image/companies/15.png" alt="" /></div>
+          <div><img src="/image/companies/16.png" alt="" /></div>
+          <div><img src="/image/companies/17.png" alt="" /></div>
+          <div><img src="/image/companies/18.png" alt="" /></div>
+          <div><img src="/image/companies/19.png" alt="" /></div>
+          <div><img src="/image/companies/20.png" alt="" /></div>
         </div>
       </section>
     </main>
@@ -693,5 +790,7 @@
 
     <!-- javascript -->
     <script src="/script.js"></script>
+
+    <script src="path/to/chartjs/dist/chart.umd.js"></script>
   </body>
 </html>

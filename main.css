@@ -45,17 +45,17 @@ body {
 
 .sticky {
     top: 0;
-
     box-shadow: 0px 36px 66px 0px #0000001F;
     z-index: 10;
     transition: background 0.3s ease;
     padding: 5px 0;
-    background: #FFFFFF;
+    background: #F3F3F3;
     color: #2042B6;
     top: 10px;
-    margin: 0 35px;
+    margin: 500px 35px 0 35px;
     border-radius: 8px;
 }
+
 /* New styles for sticky state */
 header.sticky .navBtn button i,
 header.sticky .navBtn button a,
@@ -64,18 +64,18 @@ header.sticky .navBtn button {
 }
 
 header.sticky .navBtn button {
-color: #2042B6;
- 
+    color: #2042B6;
+
 }
+
 header.sticky .navBtn #AFCD80 {
-border: 1px solid #AFCD80
- 
+    border: 1px solid #AFCD80
 }
 
 header.sticky .navBtn button .fa-share-nodes,
 header.sticky .navBtn button .fa-bars {
-color: #2042B6;
-  
+    color: #2042B6;
+
 }
 
 /* Add class to hide and show the new logo */
@@ -91,6 +91,7 @@ header.sticky .site-logo-new {
 header.sticky .site-logo-new {
     display: block;
 }
+
 .menuToggle {
     cursor: pointer;
     z-index: 10000;
@@ -149,6 +150,7 @@ header.sticky .site-logo-new {
 .com_input input::placeholder {
     color: #191618;
     text-align: left;
+    width: 100%;
     /* margin-right: -100px; */
 }
 
@@ -381,11 +383,11 @@ header.sticky .site-logo-new {
     text-align: left;
 }
 
-.portfolio_companies div div div {
+.portfolio_companies div div {
 
     width: 220px;
     height: 120px;
-
+    margin: auto;
     background: white;
 
 
@@ -502,6 +504,10 @@ footer .icon button i:last-child {
 @media screen and (max-width: 640px) {
 
     /* nav */
+    .sticky {
+        margin: 0 5px;
+    }
+
     .menuItems {
 
         top: 10px;
@@ -549,7 +555,46 @@ footer .icon button i:last-child {
         margin-bottom: 10px;
     }
 
+    /* chart */
+ .chart_left_side select {
+       font-family: Nantes;
+   
+       background-color: inherit;
+      
+   }
+        .custom-select {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: none;
+            background-color: #0c5c9a;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: Nantes;
+            outline: none;
+            cursor: pointer;
+        }
+ .custom-select-wrapper::after {
+     content: '+';
+     /* position: absolute; */
+     top: 50%;
+     right: 10px;
+     transform: translateY(-50%);
+     font-size: 18px;
+     color: white;
+     pointer-events: none;
+ }
+
+ .custom-select-wrapper.focused::after {
+     content: '-';
+ }
+ 
     /* table  */
+
     .table_btn button {
         width: 100%;
     }
@@ -646,6 +691,8 @@ footer .icon button i:last-child {
     }
 
     .about p {
+
+        width: 100%;
         font-size: 16px;
         text-align: center;
         margin: 5px 0 10px 0;
@@ -665,7 +712,7 @@ footer .icon button i:last-child {
         text-align: center;
     }
 
-    .portfolio_companies div div div {
+    .portfolio_companies div div {
 
         width: 100%;
     }
@@ -681,4 +728,38 @@ footer .icon button i:last-child {
         line-height: 30px;
 
     }
+}
+
+/* responsive for laptop */
+@media screen and (max-width: 1024px) {
+
+    /* sponsor */
+    .sponsor_name div {
+        width: 100%;
+    }
+
+    .sponsor_name div img {
+        width: 80px;
+        height: 50px;
+        margin: 30px;
+    }
+
+    .storyTailer .card_content p {
+
+        width: 280px;
+
+    }
+
+    /* about */
+    .about p {
+        width: 100%;
+    }
+
+    /* portfolio companies */
+    .portfolio_companies div div div {
+
+        width: 180px;
+    }
+
+
 }

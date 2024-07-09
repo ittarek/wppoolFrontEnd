@@ -85,7 +85,7 @@
     <main class="">
       <!-- banner -->
       <section
-        class="banner pb-11 lg:px-9 px-3 lg:h-screen -mt-[95px] xl:-mt-[110px] lg:-mt-[115px] bg-[#2042B6] h-screen lg:flex justify-between items-end gap-6"
+        class=" banner pb-11 lg:px-9 px-3 lg:h-screen -mt-[95px] xl:-mt-[110px] lg:-mt-[115px] bg-[#2042B6] h-screen lg:flex justify-between items-end gap-6"
       >
         <div
           class="text_side gap-11 items-center relative z-[9] py-[100px] lg:py-[0px] text-white"
@@ -171,85 +171,108 @@
       </section>
       <!-- chart -->
 
-      <section class="chart bg-white my-11 lg:px-9 px-3">
-        <section class="lg:flex justify-between items-centar gap-[20px]">
+      <section class="chart bg-white my-11 xl:py-11 lg:px-9 px-3">
+        <section class="lg:flex justify-center items-centar gap-11">
           <div
-            class="chart_left_side xl:w-[224px] xl:h-[602px] bg-[#EFF3F6] flex flex-col text-[#647888] space-y-3 px-3 pt-3"
+            class="chart_left_side xl:w-[224px] xl:h-[600px] bg-[#EFF3F6] flex flex-col text-[#647888] space-y-3 px-3 pt-3"
           >
             <div class="custom-select-wrapper">
-              <select
-                class="custom-select bg-[#2042B6] text-white rounded-[14px]"
-                name="The Index"
-                id=""
-              >
-                <option value="The Index">The Index</option>
+              <select class="custom-select rounded-[14px]">
+                <option value="The Index" selected>The Index</option>
+                <option value="The Index" selected>The Index 2</option>
+                <option value="The Index">The Index 3</option>
               </select>
             </div>
             <div class="custom-select-wrapper">
               <select
-                class="custom-select bg-[#2042B6] text-white rounded-[14px]"
+                class="custom-select rounded-[14px]"
                 name="The Index"
                 id=""
               >
-                <option value="The Index">The Index</option>
+                <option value="The Index 2" selected>The Index Tab Two</option>
               </select>
             </div>
             <div class="custom-select-wrapper">
               <select
-                class="custom-select bg-[#2042B6] text-white rounded-[14px]"
+                class="custom-select rounded-[14px]"
                 name="The Index"
                 id=""
               >
-                <option value="The Index">The Index</option>
+                <option value="The Index">The Index Tab Three</option>
               </select>
             </div>
-            <select class="bg-[#EFF3F6]" name="The Index" id="">
-              <option value="">The Index Tab Two</option>
-            </select>
-            <select class="bg-[#EFF3F6]" name="The Index" id="">
-              <option value="">The Index Tab Three</option>
-            </select>
-            <select class="bg-[#EFF3F6]" name="The Index" id="">
-              <option value="">The Index Tab Four</option>
-            </select>
-            <select class="bg-[#EFF3F6]" name="The Index" id="">
-              <option value="">The Index Tab Five</option>
-            </select>
+            <div class="custom-select-wrapper">
+              <select
+                class="custom-select rounded-[14px]"
+                name="The Index"
+                id=""
+              >
+                <option value="The Index">The Index Tab Four</option>
+              </select>
+            </div>
+            <div class="custom-select-wrapper">
+              <select
+                class="custom-select rounded-[14px]"
+                name="The Index"
+                id=""
+              >
+                <option value="The Index">The Index Tab Five</option>
+              </select>
+            </div>
           </div>
-          <div>
-            <div class="chart_heading"><h1>The WPPOOP Index</h1></div>
+          <div class="chart_header_items space-y-3">
+            <div class="chart_heading flex items-center">
+              <img class=" " src="/image/Union.png" alt="" />
+              <h1>The WPPOOL Index</h1>
+            </div>
 
-            <div class="chart_sum flex justify-between items-center gap-6">
+            <div
+              class="chart_sum  lg:flex justify-between items-center gap-6 space-x-1"
+            >
               <div>
-                <h1>+66.2%</h1>
-                <p class="border border-r-8 border-red-400">WPPOOP Index</p>
+                <h1><sub>+</sub>66.2%</h1>
+                <p class=" ">
+                  WPPOOL <br />
+                  Index
+                </p>
               </div>
               <div>
-                <h1>+26.6%</h1>
-                <p class="border border-r-8 border-red-400">Google Index</p>
+                <h1><sub> + </sub>26.6%</h1>
+                <p class="">
+                  Google <br />
+                  Index
+                </p>
               </div>
               <div>
-                <h1>+34.1%</h1>
-                <p class="border border-r-8 border-red-400">Microsoft</p>
+                <h1><sub>+</sub>34.1%</h1>
+                <p class=" ">Microsoft</p>
               </div>
               <div>
-                <h1>+17%</h1>
-                <p class="border border-r-8 border-red-400">Twitter Index</p>
+                <h1><sub>+</sub>17%</h1>
+                <p class=" ">
+                  Twitter <br />
+                  Index
+                </p>
               </div>
             </div>
-            <div class="flex justify-between items-center">
-              <div class="flex items-center gap-6">
-                <section class="bg-blue-800 text-white">
-                  <option value="">Sectors</option>
-                </section>
-                <section class="bg-blue-800 text-white">
-                  <option value="">Types Of IPO</option>
-                </section>
+            <div class="lg:flex justify-between  items-center mx-auto">
+              <div class="chart_direction flex items-center gap-6 ">
+                <button class="flex justify-between items-center">
+                  <span class="">Sectors</span>
+                  <select class="" name="" id=""></select>
+                </button>
+                <button class="flex justify-between items-center">
+                  <span class="">Types of IPO</span>
+                  <select class="" name="" id=""></select>
+                </button>
               </div>
-              <div class="bg-[#EFF3F6] flex space-x-3 text-end">
+
+              <div
+                class="chart_dir_right_items bg-[#EFF3F6] space-x-3 text-end mx-auto mt-3 lg:mt-0"
+              >
                 <p>1Y</p>
                 <p>YTD</p>
-                <p class="bg-[#2042B6">6M</p>
+                <p class="bg-[#2042B6] px-[8px] py-[3px] rounded-[124px]">6M</p>
                 <p>1M</p>
                 <p>1W</p>
               </div>

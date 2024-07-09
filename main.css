@@ -41,6 +41,182 @@ body {
 
 }
 
+/* chart */
+
+.custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.custom-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: none;
+    font-family: Nantes;
+    cursor: pointer;
+    outline: none;
+
+}
+
+
+.custom-select-wrapper::after {
+    content: '+';
+    position: absolute;
+    font-size: 18px;
+    right: 0;
+    pointer-events: none;
+}
+
+.custom-select-wrapper.focused::after {
+    content: '-';
+}
+
+.chart_heading h1 {
+    font-family: Nantes;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 50.72px;
+    text-align: left;
+}
+
+.chart_sum div {
+    background: #F3F3F3;
+    width: 230px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 6px;
+}
+
+.chart_sum h1 {
+    font-family: Nantes;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+}
+
+.chart_sum div:first-child h1 {
+    color: #FC714D;
+}
+
+.chart_sum div:nth-child(2) h1 {
+    color: #615DE3;
+}
+
+.chart_sum div:nth-child(3) h1 {
+    color: #7CA63A;
+}
+
+.chart_sum div:last-child h1 {
+    color: #6F34A1;
+}
+
+.chart_sum div p {
+    font-family: Messina Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: left;
+    color: #191618;
+    border-right: 4px solid;
+    padding: 0 8px;
+
+}
+
+.chart_sum div:first-child p {
+    border-color: #FC714D;
+}
+
+.chart_sum div:nth-child(2) p {
+    border-color: #615DE3;
+}
+
+.chart_sum div:nth-child(3) p {
+    border-color: #AFCD80;
+    padding: 8px 8px;
+}
+
+.chart_sum div:last-child p {
+    border-color: #6F34A1;
+}
+
+.chart_direction select {
+
+    color: white;
+    background-color: transparent;
+}
+
+
+.chart_direction button {
+    width: 178px;
+    height: 26px;
+    border-radius: 124px;
+    padding: 0px 10px;
+    background-color: #2042B6;
+    color: #FAFAFA;
+    font-family: Messina Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: left;
+}
+
+.chart_direction p {
+    font-family: Messina Sans;
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 25.6px;
+    text-align: left;
+    color: #191618;
+}
+
+.chart_direction select option {
+    font-family: Messina Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.4px;
+    text-align: left;
+    margin-left: 10px;
+
+
+}
+
+.chart_dir_right_items {
+    width: 232px;
+    height: 30px;
+    border-radius: 124px;
+
+
+
+}
+
+.chart_dir_right_items {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 18px;
+}
+
+.chart_dir_right_items p {
+
+    font-family: Messina Sans;
+    font-size: 12px;
+    font-weight: 400;
+    color: #748DA1;
+    /* margin-right: 50px; */
+
+}
+
+.chart_dir_right_items p:nth-child(3) {
+    color: #FAFAFA;
+
+}
+
 /* header */
 
 .sticky {
@@ -534,7 +710,7 @@ footer .icon button i:last-child {
 
     .middle_text {
 
-        margin-top: -50px;
+        margin: -100px 0px -100px 0px;
     }
 
     .middle_text h1 {
@@ -556,43 +732,31 @@ footer .icon button i:last-child {
     }
 
     /* chart */
- .chart_left_side select {
-       font-family: Nantes;
-   
-       background-color: inherit;
-      
-   }
-        .custom-select {
-            appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            background: none;
-            background-color: #0c5c9a;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            width: 100%;
-            box-sizing: border-box;
-            font-family: Nantes;
-            outline: none;
-            cursor: pointer;
-        }
- .custom-select-wrapper::after {
-     content: '+';
-     /* position: absolute; */
-     top: 50%;
-     right: 10px;
-     transform: translateY(-50%);
-     font-size: 18px;
-     color: white;
-     pointer-events: none;
+    .chart {
+
+        padding: 30px 0;
+    }
+
+    .chart_sum div {
+
+        width: 100%;
+        margin-bottom: 10px;
+        height: 50px;
+    }
+
+    .chart_heading {
+        margin: 10px 0;
+        
+        justify-content: center;
+    }
+ 
+    .chart_heading h1{
+        text-align: center;
+    }
+ .chart_direction{
+    justify-content: center;
  }
 
- .custom-select-wrapper.focused::after {
-     content: '-';
- }
- 
     /* table  */
 
     .table_btn button {

@@ -87,14 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
         },
        
       },
-      y: {
-        display: true,
-        title: {
-          display: true,
-          text: "Count",
-        },
-        beginAtZero: true,
-      },
+     
     },
   };
 

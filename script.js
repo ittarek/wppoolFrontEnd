@@ -1,7 +1,7 @@
 // for header
 window.addEventListener("scroll", function () {
   let header = document.getElementsByTagName("header")[0];
-  if (window.scrollY > 520) {
+  if (window.scrollY > 550) {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
@@ -9,94 +9,148 @@ window.addEventListener("scroll", function () {
 });
 
 // for select
-  document.querySelectorAll(".custom-select").forEach(select => {
-    select.addEventListener("focus", function () {
-      this.parentElement.classList.add("focused");
-    });
-    select.addEventListener("blur", function () {
-      this.parentElement.classList.remove("focused");
-    });
+document.querySelectorAll(".custom-select").forEach(select => {
+  select.addEventListener("focus", function () {
+    this.parentElement.classList.add("focused");
   });
-
-  // for chart
-document.addEventListener("DOMContentLoaded", function () {
-  const ctx = document.getElementById("myChart").getContext("2d");
-
-  const data = {
-    labels: ["Feb", "Mar", "Apr", "May", "Jun", "Jul"],
-    datasets: [
-      {
-        label: "WPPOOL",
-        data: [
-          0, 5, 0, 20, 22, 10, 35, 55, 40, 65, 40, 60, 30, 30, 25, 22, 22, 30,
-          25, 40, 35, 45, 35, 35, 43, 38, 45, 40, 35, 40, 35, 45, 50, 60, 45,
-          55, 50, 25, 22, 22, 30, 25, 40, 35, 45, 35, 35, 43, 38, 45, 40, 35,
-          40, 35, 45, 50, 60, 45, 55, 50,
-        ],
-        borderColor: "#ff0000",
-        backgroundColor: "rgba(255, 0, 0, 0.2)",
-        width: "20px",
-        height: "20px",
-        fill: false,
-      },
-      {
-        label: "Google",
-        data: [0, 5, 15, 25, 35, 45],
-        borderColor: "#00ff00",
-        backgroundColor: "rgba(0, 255, 0, 0.2)",
-        fill: false,
-      },
-      {
-        label: "Microsoft",
-        data: [0, 15, 10, 20, 30, 40],
-        borderColor: "#0000ff",
-        backgroundColor: "rgba(0, 0, 255, 0.2)",
-        fill: false,
-      },
-      {
-        label: "Twitter",
-        data: [0, 10, 25, 15, 20, 30],
-        borderColor: "#ff00ff",
-        backgroundColor: "rgba(255, 0, 255, 0.2)",
-        fill: false,
-      },
-    ],
-  };
-
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: "bottom",
-      },
-      tooltip: {
-        mode: "index",
-        intersect: false,
-      },
-    },
-    hover: {
-      mode: "nearest",
-      intersect: true,
-    },
-    scales: {
-      x: {
-        display: true,
-        title: {
-          display: false,
-          text: "WAPPOOL",
-        },
-       
-      },
-     
-    },
-  };
-
-  new Chart(ctx, {
-    type: "line",
-    data: data,
-    options: options,
+  select.addEventListener("blur", function () {
+    this.parentElement.classList.remove("focused");
   });
 });
+
+// for chart
+
+
+Highcharts.chart("myChart", {
+  chart: {
+    type: "spline",
+    // styledMode: true,
+  },
+  title: {
+    text: " ",
+  },
+  xAxis: {
+    tickPositions: [3, 7, 11, 15, 19, 23],
+    categories: [
+      "",
+      "",
+      "",
+      "Feb",
+      "",
+      "",
+      "",
+      "Mar",
+      "",
+      "",
+      "",
+      "Apr",
+      "",
+      "",
+      "",
+      "May",
+      "",
+      "",
+      "",
+      "Jun",
+      "",
+      "",
+      "",
+      "Jul",
+    ],
+    legend: {
+      layout: "vertical",
+      floating: true,
+      align: "left",
+      x: 100,
+      verticalAlign: "top",
+      y: 70,
+    },
+    tickPositions: [
+      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23,
+    ],
+  
+    plotLines: [
+      {
+        color: "#9FA0A1",
+        width: 1,
+        value: -0.5,
+        zIndex: 3,
+      },
+      {
+        color: "#9FA0A1",
+        width: 1,
+        value: 23.5,
+        zIndex: 3,
+      },
+    ],
+  },
+  yAxis: {
+    title: {
+      text: "",
+    },
+    labels: {
+      format: "{value}%",
+    },
+    tickPositions: [-10, 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100],
+    plotLines: [
+      {
+        color: "#9FA0A1",
+        width: 1,
+        value: -10,
+        zIndex: 3,
+      },
+      {
+        color: "#9FA0A1",
+        width: 1,
+        value: 100,
+        zIndex: 3,
+      },
+    ],
+  },
+  tooltip: {
+    crosshairs: true,
+    shared: true,
+  },
+
+  series: [
+    {
+      name: "WPPOOL",
+      data: [
+        0, 20, 22, 25, 18, 20, 55, 60, 20, 22, 5.2, 5.7, 8.7, 13.9, 18.2, 21.4,
+        100,
+      ],
+      style: {
+        backgroundColor: "#FC714D",
+        color: "blue",
+      },
+    },
+    {
+      name: "Google",
+      data: [
+        0, 10, 20, 20, 55, 2, 6, 4, 8, 25, 35, 26, 25, 58, 9, 26, 45, 24, 100,
+      ],
+      backgroundColor: "#615DE3",
+    },
+    {
+      name: "Microsoft",
+      data: [
+        0, 10, 20, 20, 55, 25, 26, 25, 58, 9, 26, 45, 24, 100, 55, 25, 26, 25,
+        58, 9, 26, 45, 24, 100,
+      ],
+      backgroundColor: "#AFCD80",
+    },
+    {
+      name: "Tweeter",
+      data: [
+        0, 10, 10, 50, 40, 10, 8, 9, 55, 20, 20, 55, 25, 26, 25, 58, 9, 26, 45,
+        24, 100,
+      ],
+      backgroundColor: "#6F34A1",
+    },
+  ],
+});
+
 
 // for menu
 let menuToggle = document.querySelector(".menuToggle");
@@ -137,8 +191,6 @@ document.getElementById("next").addEventListener("click", () => {
 document.getElementById("prev").addEventListener("click", () => {
   goToSlide(currentSlide - 1);
 });
-
-
 
 function goToSlide(n) {
   currentSlide = (n + slides.length) % slides.length;

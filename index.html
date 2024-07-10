@@ -14,13 +14,19 @@
     />
     <!-- css -->
     <link rel="stylesheet" href="main.css" />
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+     <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
     <!-- tailwind link -->
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
     <title>Wppool</title>
   </head>
   <body>
@@ -85,9 +91,10 @@
     <main class="">
       <!-- banner -->
       <section
-        class=" banner pb-11 lg:px-9 px-3 lg:h-screen -mt-[95px] xl:-mt-[110px] lg:-mt-[115px] bg-[#2042B6] h-screen lg:flex justify-between items-end gap-6"
+        class=" banner pb-11 lg:px-9 px-3 lg:h-[650px] -mt-[96px] xl:-mt-[110px] lg:-mt-[115px] bg-[#2042B6] h-[500px] lg:flex justify-between items-end gap-6"
       >
-        <div
+      
+         <div
           class="text_side gap-11 items-center relative z-[9] py-[100px] lg:py-[0px] text-white"
         >
           <div>
@@ -112,8 +119,9 @@
           </div>
         </div>
         <div class="image_side my-auto">
-          <svg
-            class="absolute xl:top-[10%] lg:h-[90%] xl:left-[] xl-[549px] xl:h-[542px] top-[5%] left-0 w-[100%] h-[100%]"
+         <div class="banner_img md:left-[30%] absolute  xl:top-[10%] lg:h-screen  xl:left-[32%] top-[15%] left-[5%]">
+           <svg
+            class=" xl-[549px] xl:h-[542px] top-0 left-0 w-[100%] h-[50%]"
             viewBox="0 0 549 542"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -149,25 +157,28 @@
           </svg>
 
           <img
-            class="absolute xl:top-[10%] xl:left-[30%] lg:left-[20%] lg:h-[90%] top-[10%] left-0"
+            class="absolute xl:top-0 xl:left-0 lg:left-[20%] lg:h-[80%] top-0 left-0"
             src="/image/Rectangle 1.png"
             alt="rectangular"
           />
-          <div class="text-white middle_text relative">
-            <h1 class="text-center lg:text-[78px]" style="font-family: Nantes">
+         </div>
+          <div class="text-white middle_text 
+           relative mx-auto">
+            <h1 class="text-center lg:text-[78px] " style="font-family: Nantes">
               The WPPOOL Index
             </h1>
-            <p class="text-center lg:text-[21px] font-[350]">
+            <p class="text-center lg:text-[21px] font-[350] ">
               Monitor the performance of emerging, publicly traded, financial
               technology companies
             </p>
           </div>
         </div>
-        <div class="button_side">
+        <div class="button_side  ">
           <i
-            class="py-[18px] px-[20px] my-auto mx-auto bg-white rounded-[260px] bg-shite fa-solid fa-arrow-down"
+            class="py-[18px] px-[20px] lg:my-auto -mt-11 mx-auto bg-white rounded-[260px] bg-shite fa-solid fa-arrow-down"
           ></i>
         </div>
+       
       </section>
       <!-- chart -->
 
@@ -221,9 +232,9 @@
             </div>
           </div>
           <div class="chart_header_items space-y-3">
-            <div class="chart_heading flex items-center">
-              <img class=" " src="/image/Union.png" alt="" />
-              <h1>The WPPOOL Index</h1>
+            <div class="chart_heading flex items-center ">
+              <img class="  " src="/image/Union.png" alt="" />
+              <h1 class="md:mr-auto">The WPPOOL Index</h1>
             </div>
 
             <div
@@ -255,7 +266,7 @@
                 </p>
               </div>
             </div>
-            <div class="lg:flex justify-between  items-center mx-auto">
+            <div class="lg:flex justify-between  items-center mx-auto md:flex md:items-center">
               <div class="chart_direction flex items-center gap-6 ">
                 <button class="flex justify-between items-center">
                   <span class="">Sectors</span>
@@ -268,7 +279,7 @@
               </div>
 
               <div
-                class="chart_dir_right_items bg-[#EFF3F6] space-x-3 text-end mx-auto mt-3 lg:mt-0"
+                class="chart_dir_right_items bg-[#EFF3F6] space-x-3 text-end mx-auto lg:mx-0 mt-3 lg:mt-0"
               >
                 <p>1Y</p>
                 <p>YTD</p>
@@ -277,7 +288,8 @@
                 <p>1W</p>
               </div>
             </div>
-            <canvas class="xl:w-[934px] xl:h-[294px]" id="myChart"></canvas>
+            <div class="xl:w-[1050px] xl:h-[400px]" id="myChart"></div>
+         
           </div>
         </section>
       </section>
@@ -287,7 +299,7 @@
         <div class="table_shadow bg-[#FAFAFA] rounded-[20px] lg:p-6 mb-6">
           <div class="companies_nav lg:flex justify-between items-center">
             <h1
-              class="font-[400] text-center lg:text-left lg:text-[48px]"
+              class="font-[400] text-center lg:text-left lg:text-[48px] text-[38px]"
               style="font-family: Nantes"
             >
               All Companies
@@ -307,8 +319,8 @@
           </div>
           <!-- table -->
           <div class="text-black table_div my-11 overflow-x-auto w-100 px-3">
-            <table class="min-w-full table-auto">
-              <thead class="sticky">
+            <table class="min-w-full overflow-x:auto table-auto">
+              <thead class="">
                 <tr class="text-left">
                   <th class="py-2">Company</th>
                   <th class="py-2 font-normal px-3">Ticker</th>
@@ -546,9 +558,9 @@
         </section>
         <div class="nav-container lg:flex items-center justify-between">
           <div
-            class="lg:flex mx-auto lg:mx-0 text-center lg:text-left lg:space-x-6"
+            class="slider_dir flex mx-auto lg:mx-0 text-center lg:text-left lg:space-x-6"
           >
-            <div class="space-x-6 mb-3 lg:mb-0">
+            <div class="slider_dir_arr lg:space-x-6 mb-3 lg:mb-0">
               <button
                 id="prev"
                 class="slide_nav border py-[15px] px-[20px] my-auto mx-auto bg-white rounded-[260px]"
@@ -562,16 +574,16 @@
                 &rarr;
               </button>
             </div>
-            <div class="pagination mx-auto" id="pagination">
-              <p class="mr-6">Pages</p>
-              <div class="z-10 space-x-3 pl-[10px] -mr-[20px]">
+            <div class="pagination mx-auto  " id="pagination">
+              <p class="mr-6 ">Pages</p>
+              <div class="z-10 lg:space-x-3 pl-[10px] xl-mr-[20px] flex justify-center">
                 <span id="current-page" class="">1</span>
                 and
                 <span id="next-page"></span>
               </div>
               <div class="relative -ml-[70px]">
                 <input
-                  class="border w-[150px] py-[7px] bg-white rounded-[260px]"
+                  class="border lg:w-[150px] w-[100px] py-[7px] bg-white rounded-[260px]"
                   type="number"
                 />
                 <select class="-ml-[30px] my-auto" name="" id=""></select>
@@ -596,7 +608,7 @@
           <p>The latest news and updates</p>
         </div>
         <div
-          class="storyTailer lg:mt-[80px] w-full lg:flex flex-col justify-center gap-6 mx-auto"
+          class="storyTailer  lg:mt-[80px]  w-full lg:flex  flex-col justify-center gap-6 mx-auto"
         >
           <div class="lg:flex justify-between items-center gap-6 lg:mb-[80px]">
             <div class="w-[380px] h-[220px] rounded-[8px] bg-white">
@@ -813,7 +825,7 @@
 
     <!-- javascript -->
     <script src="/script.js"></script>
-
-    <script src="path/to/chartjs/dist/chart.umd.js"></script>
+   
+    <!-- <script src="path/to/chartjs/dist/chart.umd.js"></script> -->
   </body>
 </html>
